@@ -437,7 +437,7 @@ guiTypes = {
 				quadTextureSprite = "GFX_open_galaxy_map"
 				orientation = center_up
 				position = { x= 194 y = 33 }
-				pdx_tooltip = "TOOLTIP_LEAVE_SYSTEM"
+				#pdx_tooltip = "" # Set in code
 				pdx_tooltip_anchor_offset = { x= 0 y = @tt_offset_y }
 				pdx_tooltip_anchor_orientation = lower_left
 				clicksound = ui_galaxy_map_open
@@ -550,7 +550,7 @@ guiTypes = {
 				position = { x= -70 y = 30 }
 				text = "LEAVE_GALAXY"
 				buttonFont = "cg_16b"
-				pdx_tooltip = "TOOLTIP_LEAVE_GALAXY"
+				#pdx_tooltip = "" # Set in code
 				pdx_tooltip_anchor_offset = { x= 0 y = @tt_offset_y }
 				pdx_tooltip_anchor_orientation = lower_left
 				clicksound = ui_galaxy_map_close
@@ -742,6 +742,13 @@ guiTypes = {
 				position = { x = -155 y = -45  }
 				orientation = lower_right
 				shortcut="alt+b"
+			}
+
+			buttonType = {
+				name = "button_topbar_help_menu"
+				quadTextureSprite = "GFX_button_60_29"
+				position = { x = -155 y = -45  }
+				orientation = lower_right
 			}
 
 			iconType = {
