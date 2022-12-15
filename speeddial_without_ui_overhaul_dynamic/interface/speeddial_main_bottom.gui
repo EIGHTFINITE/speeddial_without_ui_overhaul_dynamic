@@ -299,22 +299,22 @@ guiTypes = {
 			size = { width = 90 height = 72 }
 			position = { x = -531 y = -72 }
 			clipping = yes
-			if_scaled_resolution = {
+			if_resolution = {
 				min_width = 1650
 				position = { x = -600 y = -72 }
 				size = { width = 160 height = 72 }
 			}
-			if_scaled_resolution = {
+			if_resolution = {
 				min_width = 1920
 				position = { x = -640 y = -72 }
 				size = { width = 200 height = 72 }
 			}
-			if_scaled_resolution = {
+			if_resolution = {
 				min_width = 2560
 				position = { x = -590 y = -72 }
 				size = { width = 150 height = 72 }
 			}
-			if_scaled_resolution = {
+			if_resolution = {
 				min_width = 3440
 				position = { x = -690 y = -72 }
 			}
@@ -335,22 +335,22 @@ guiTypes = {
 			size = { width = 80 height = 68 }
 			position = { x = -520 y = -68 }
 			orientation = lower_right
-			if_scaled_resolution = {
+			if_resolution = {
 				min_width = 1650
 				size = { width = 145 height = 68 }
 				position = { x = -585 y = -68 }
 			}
-			if_scaled_resolution = {
+			if_resolution = {
 				min_width = 1920
 				size = { width = 250 height = 68 }
 				position = { x = -690 y = -68 }
 			}
-			if_scaled_resolution = {
+			if_resolution = {
 				min_width = 2560
 				size = { width = 420 height = 68 }
 				position = { x = -860 y = -68 }
 			}
-			if_scaled_resolution = {
+			if_resolution = {
 				min_width = 3440
 				position = { x = -960 y = -68 }
 			}
@@ -368,17 +368,17 @@ guiTypes = {
 				max_slots_horizontal = 2
 				format = "UPPER_RIGHT"
 				orientation = upper_right
-				if_scaled_resolution = {
+				if_resolution = {
 					min_width = 1650
 					position = { x = -153 y = 0 }
 					max_slots_horizontal = 4
 				}
-				if_scaled_resolution = {
+				if_resolution = {
 					min_width = 1920
 					position = { x = -258 y = 0 }
 					max_slots_horizontal = 7
 				}
-				if_scaled_resolution = {
+				if_resolution = {
 					min_width = 2560
 					position = { x = -420 y = 0 }
 					max_slots_horizontal = 12
@@ -392,7 +392,7 @@ guiTypes = {
 			name = "toolbar"
 			position = { x = -370 y = -36 }
 			size = { width = 380 height = 36 }
-			if_scaled_resolution = {
+			if_resolution = {
 				min_width = 3440
 				position = { x = -470 y = -36 }
 				size = { width = 480 height = 36 }
