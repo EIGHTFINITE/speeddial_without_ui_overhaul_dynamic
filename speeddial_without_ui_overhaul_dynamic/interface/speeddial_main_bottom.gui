@@ -93,42 +93,44 @@ guiTypes = {
 				orientation = center_up
 				position = { x = 194 y = 6 }
 				pdx_tooltip_anchor_offset = { x = 0 y = @tt_offset_y }
-				pdx_tooltip_anchor_orientation = lower_left
+				pdx_tooltip_anchor_orientation = upper_right
 				clicksound = ui_galaxy_map_open
 				oversound = mouse_over
 			}
 			instantTextBoxType = {
 				name = "system_name"
-				font = "large_title_font_26"
-				position = { x = -195 y = 11 }
+				font = "font_header_20"
 				text = "Systemname"
-				maxWidth = 390
-				maxHeight = 50
-				format = center
+				position = { x = -195 y = 13 }
 				orientation = center_up
-				alwaysTransparent = yes
+				maxWidth = 390
+				maxHeight = 25
 				fixedSize = yes
+				format = center
+				vertical_alignment = center
 				#text_color_code = "E"
+				alwaysTransparent = yes
 			}
 			instantTextBoxType = {
 				name = "system_type"
 				font = "font_text_14"
-				position = { x = -195 y = 37 }
 				text = "Mining System"
-				maxWidth = 390
-				maxHeight = 50
-				format = center
+				position = { x = -195 y = 38 }
 				orientation = center_up
-				alwaysTransparent = yes
+				maxWidth = 390
+				maxHeight = 19
 				fixedSize = yes
+				format = center
+				vertical_alignment = top
 				text_color_code = "E"
+				alwaysTransparent = yes
 			}
 			buttonType = {
 				name = "system_rename_button"
 				spriteType = "GFX_invisible"
 				position = { x = -163 y = 13 }
-				size = { x = 330 y = 45 }
 				orientation = center_up
+				size = { x = 330 y = 45 }
 				pdx_tooltip = "RENAME_SYSTEM_TOOLTIP"
 				oversound = no_sound
 			}
@@ -213,20 +215,22 @@ guiTypes = {
 				name = "manage_bar_background"
 				spriteType = "GFX_ui_mapmode_manage"
 				position = { x = 0 y = 28 }
-				alwaysTransparent = yes
 				orientation = center_up
 				centerPosition = yes
+				alwaysTransparent = yes
 			}
 			instantTextBoxType = {
 				name = "status"
-				font = "font_header_20"
+				font = "font_text_18"
+				text = "CLAIMS_MANAGEMENT_MODE"
 				position = { x = -125 y = 3 }
 				orientation = center_up
 				maxWidth = 250
-				maxHeight = 48
-				alwaysTransparent = yes
+				maxHeight = 50
+				fixedSize = yes
 				format = center
-				text = "CLAIMS_MANAGEMENT_MODE"
+				vertical_alignment = center
+				alwaysTransparent = yes
 			}
 			iconType = {
 				name = "system_button_panel"
@@ -268,14 +272,15 @@ guiTypes = {
 			}
 			instantTextBoxType = {
 				name = "status"
-				font = "font_header_20"
+				font = "font_text_18"
+				text = "TRADE_ROUTES_MANAGEMENT_MODE"
 				position = { x = -125 y = 3 }
 				orientation = center_up
 				maxWidth = 250
-				maxHeight = 48
-				alwaysTransparent = yes
+				maxHeight = 50
 				format = center
-				text = "TRADE_ROUTES_MANAGEMENT_MODE"
+				vertical_alignment = center
+				alwaysTransparent = yes
 			}
 			iconType = {
 				name = "system_button_panel"
