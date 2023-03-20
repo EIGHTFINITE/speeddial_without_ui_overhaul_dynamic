@@ -5,6 +5,6 @@ tags={
 	"Overhaul"
 }
 picture="thumbnail.png"
-supported_version="3.6.*"
+supported_version="3.7.*"
 path="mod/speeddial_without_ui_overhaul_dynamic"
 remote_file_id="2895501866"
