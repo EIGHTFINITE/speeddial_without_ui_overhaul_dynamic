@@ -360,7 +360,7 @@ guiTypes = {
 				position = { x = -960 y = -68 }
 			}
 			clipping = yes
-			verticalScrollbar = "right_vertical_slider_s_thick"
+			verticalScrollbar = "right_vertical_slider_thick_small"
 			background = {
 				name = "background"
 				spriteType = "GFX_invisible"
