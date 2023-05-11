@@ -20,7 +20,7 @@ guiTypes = {
 		### LEAVE SYSTEM WINDOW
 		containerWindowType = {
 			name = "leave_system_window"
-			size = { width = 500 height = 60 }
+			size = { width = 510 height = 60 }
 			hide_position = { x = 0 y = 60 }
 			show_position = { x = 0 y = -8 }
 			animation_type = decelerated
@@ -82,10 +82,17 @@ guiTypes = {
 			buttonType = {
 				name = "flag_button"
 				quadTextureSprite = "GFX_empire_flag_64"
-				position = { x = -257 y = 0 } # 27
+				position = { x = -257 y = 0 }
 				orientation = center_up
 				clicksound = interface
 				oversound = no_sound
+			}
+			iconType = {
+				name = "map_button_bg"
+				orientation = center_up
+				position = { x = 199 y = 11 }
+				spriteType = "GFX_bottombar_button_bg"
+				alwaysTransparent = yes
 			}
 			buttonType = {
 				name = "button"
@@ -108,7 +115,6 @@ guiTypes = {
 				fixedSize = yes
 				format = center
 				vertical_alignment = center
-				#text_color_code = "E"
 				alwaysTransparent = yes
 			}
 			instantTextBoxType = {
@@ -153,27 +159,55 @@ guiTypes = {
 		### LEAVE GALAXY WINDOW
 		containerWindowType = {
 			name = "leave_galaxy_window"
-			size = { width = 370 height = 49 }
-			hide_position = { x = 0 y = 49 }
-			show_position = { x = 0 y = -46 }
+			size = { width = 510 height = 60 }
+			hide_position = { x = 0 y = 60 }
+			show_position = { x = 0 y = -8 }
 			animation_type = decelerated
 			animation_time = 500
 			orientation = center_down
 			origo = center_down
+			clipping = no
+			background = {
+				name = "background"
+				spriteType = "GFX_invisible"
+			}
 			iconType = {
 				name = "system_button_panel"
 				spriteType = "GFX_ui_galaxy_panel"
-				position = { x = 0 y = 62 }
+				position = { x = 0 y = 35 }
+				orientation = center_up
+				centerPosition = yes
+			}
+			iconType = {
+				name = "starsystem_panel"
+				spriteType = "GFX_starsystem_panel"
+				position = { x = 0 y = 35 }
+				alwaysTransparent = yes
 				orientation = center_up
 				centerPosition = yes
 			}
 			iconType = {
 				name = "paused_bar_bg"
-				spriteType = "GFX_ui_galaxy_paused"
-				position = { x = 0 y = 62 }
+				spriteType = "GFX_ui_system_paused"
+				position = { x = 0 y = 35 }
 				alwaysTransparent = yes
 				orientation = center_up
 				centerPosition = yes
+			}
+			buttonType = {
+				name = "flag_button_galaxy_view"
+				quadTextureSprite = "GFX_empire_flag_64"
+				position = { x = -257 y = 0 }
+				orientation = center_up
+				clicksound = interface
+				oversound = no_sound
+			}
+			iconType = {
+				name = "map_button_bg"
+				orientation = center_up
+				position = { x = 199 y = 11 }
+				spriteType = "GFX_bottombar_button_bg"
+				alwaysTransparent = yes
 			}
 			instantTextBoxType = {
 				name = "paused"
@@ -185,12 +219,36 @@ guiTypes = {
 				fixedSize = yes
 				alwaysTransparent = yes
 			}
+			instantTextBoxType = {
+				name = "empire_name"
+				font = "font_header_20"
+				position = { x = -195 y = 13 }
+				orientation = center_up
+				maxWidth = 390
+				maxHeight = 25
+				fixedSize = yes
+				format = center
+				vertical_alignment = center
+				alwaysTransparent = yes
+			}
+			instantTextBoxType = {
+				name = "empire_type"
+				font = "font_text_14"
+				position = { x = -195 y = 38 }
+				orientation = center_up
+				maxWidth = 390
+				maxHeight = 19
+				fixedSize = yes
+				format = center
+				vertical_alignment = top
+				text_color_code = "E"
+				alwaysTransparent = yes
+			}
 			buttonType = {
-				name = "button"
-				quadTextureSprite = "GFX_button_animated_265_34"
-				position = { x = 40 y = 33 }
-				text = "LEAVE_GALAXY"
-				buttonFont = "font_text_14"
+				name = "change_camera_mode_button"
+				quadTextureSprite = "GFX_open_system_map"
+				orientation = center_up
+				position = { x = 194 y = 6 }
 				pdx_tooltip_anchor_offset = { x = 0 y = @tt_offset_y }
 				pdx_tooltip_anchor_orientation = lower_left
 				clicksound = ui_galaxy_map_close
@@ -924,10 +982,10 @@ guiTypes = {
 				effect = "speeddial_button_xenonews_effect"
 			}
 		}
+		#######################
+		#### SPEEDDIAL END ####
+		#######################
 	}
-	#######################
-	#### SPEEDDIAL END ####
-	#######################
 	containerWindowType = {
 		name = "control_group_window"
 		size = { width = 62 height = 47 }
