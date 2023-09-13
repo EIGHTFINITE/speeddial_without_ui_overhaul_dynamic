@@ -33,7 +33,7 @@ guiTypes = {
 			clipping = no
 			background = {
 				name = "pop_background"
-				spriteType = "GFX_tiled_window_transparent"
+				spriteType = "GFX_invisible"
 				pdx_tooltip = "speeddial_uiod_hover"
 			}
 			effectButtonType = {
