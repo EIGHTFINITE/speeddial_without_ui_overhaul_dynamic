@@ -77,12 +77,12 @@ guiTypes = {
 			iconType = {
 				name = "restricted_button_bg"
 				spriteType = "GFX_starsystem_panel_right"
-				position = { x = 55 y = 19 }
+				position = { x = 60 y = 19 }
 			}
 			buttonType = {
 				name = "flag_button"
 				quadTextureSprite = "GFX_empire_flag_64"
-				position = { x = -257 y = 0 }
+				position = { x = -259 y = 0 }
 				orientation = center_up
 				clicksound = interface
 				oversound = no_sound
@@ -153,7 +153,7 @@ guiTypes = {
 			buttonType = {
 				name = "restricted_system_button"
 				quadTextureSprite = "GFX_restricted_system_icon"
-				position = { x = 55 y = 16 }
+				position = { x = 60 y = 16 }
 			}
 		}
 		### LEAVE GALAXY WINDOW
@@ -197,7 +197,7 @@ guiTypes = {
 			buttonType = {
 				name = "flag_button_galaxy_view"
 				quadTextureSprite = "GFX_empire_flag_64"
-				position = { x = -257 y = 0 }
+				position = { x = -259 y = 0 }
 				orientation = center_up
 				clicksound = interface
 				oversound = no_sound
@@ -360,28 +360,26 @@ guiTypes = {
 		containerWindowType = {
 			name = "mapmodes_background"
 			size = { width = 90 height = 72 }
-			position = { x = -531 y = -72 }
+			position = { x = -441 y = 0 }
+			orientation = lower_right
+			origo = lower_right
 			clipping = yes
-			if_resolution = {
+			if_scaled_resolution = {
 				min_width = 1650
-				position = { x = -600 y = -72 }
 				size = { width = 160 height = 72 }
 			}
-			if_resolution = {
+			if_scaled_resolution = {
 				min_width = 1920
-				position = { x = -640 y = -72 }
 				size = { width = 200 height = 72 }
 			}
-			if_resolution = {
+			if_scaled_resolution = {
 				min_width = 2560
-				position = { x = -590 y = -72 }
 				size = { width = 150 height = 72 }
 			}
-			if_resolution = {
+			if_scaled_resolution = {
 				min_width = 3440
-				position = { x = -690 y = -72 }
+				position = { x = -541 y = 0 }
 			}
-			orientation = lower_right
 			containerWindowType = {
 				name = "mapmodes_background_scalefix"
 				size = { width = 100% height = 100% }
@@ -396,26 +394,24 @@ guiTypes = {
 		containerWindowType = {
 			name = "mapmodes"
 			size = { width = 80 height = 68 }
-			position = { x = -520 y = -68 }
+			position = { x = -440 y = 0 }
 			orientation = lower_right
-			if_resolution = {
+			origo = lower_right
+			if_scaled_resolution = {
 				min_width = 1650
 				size = { width = 145 height = 68 }
-				position = { x = -585 y = -68 }
 			}
-			if_resolution = {
+			if_scaled_resolution = {
 				min_width = 1920
 				size = { width = 250 height = 68 }
-				position = { x = -690 y = -68 }
 			}
-			if_resolution = {
+			if_scaled_resolution = {
 				min_width = 2560
 				size = { width = 420 height = 68 }
-				position = { x = -860 y = -68 }
 			}
-			if_resolution = {
+			if_scaled_resolution = {
 				min_width = 3440
-				position = { x = -960 y = -68 }
+				position = { x = -540 y = 0 }
 			}
 			clipping = yes
 			verticalScrollbar = "right_vertical_slider_thick_small"
@@ -426,22 +422,22 @@ guiTypes = {
 			gridBoxType = {
 				name = "map_modes"
 				position = { x = -88 y = 0 }
-				size = { width = 100% height = 68 }
+				size = { width = 100% height = -5 }
 				slotSize = { width = 34 height = 34 }
 				max_slots_horizontal = 2
 				format = "UPPER_RIGHT"
 				orientation = upper_right
-				if_resolution = {
+				if_scaled_resolution = {
 					min_width = 1650
 					position = { x = -153 y = 0 }
 					max_slots_horizontal = 4
 				}
-				if_resolution = {
+				if_scaled_resolution = {
 					min_width = 1920
 					position = { x = -258 y = 0 }
 					max_slots_horizontal = 7
 				}
-				if_resolution = {
+				if_scaled_resolution = {
 					min_width = 2560
 					position = { x = -420 y = 0 }
 					max_slots_horizontal = 12
@@ -453,19 +449,18 @@ guiTypes = {
 		# Lower right toolbar
 		containerWindowType = {
 			name = "toolbar"
-			position = { x = -370 y = -36 }
+			position = { x = 10 y = 0 }
 			size = { width = 380 height = 36 }
-			if_resolution = {
+			if_scaled_resolution = {
 				min_width = 3440
-				position = { x = -470 y = -36 }
 				size = { width = 480 height = 36 }
 			}
 			orientation = lower_right
+			origo = lower_right
 			clipping = no
 			background = {
 				name = "bg"
 				quadTextureSprite = "GFX_topbar_background"
-				position = { x = 0 y = 0 }
 			}
 			iconType = {
 				name = "bottombar_details"
@@ -690,7 +685,7 @@ guiTypes = {
 			clipping = no
 			background = {
 				name = "pop_background"
-				spriteType = "GFX_tiled_window_transparent"
+				spriteType = "GFX_invisible"
 				pdx_tooltip = "speeddial_uiod_hover"
 			}
 			effectButtonType = {
@@ -1035,7 +1030,6 @@ guiTypes = {
 	#map mode neighbours
 	containerWindowType = {
 		name = "main_gui_map_mode_entry"
-		position = { x = 0 y = 0 }
 		size = { width = 32 height = 32 }
 		buttonType = {
 			name = "button"
