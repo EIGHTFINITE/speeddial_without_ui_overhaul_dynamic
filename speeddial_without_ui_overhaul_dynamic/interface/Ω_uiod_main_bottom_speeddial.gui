@@ -22,312 +22,6 @@ guiTypes = {
 			format = left
 		}
 
-		###################
-		#### SPEEDDIAL ####
-		###################
-		containerWindowType = {
-			name = "speeddial"
-			size = { width = 53 height = 30 }
-			position = { x = 30 y = 121 }
-			moveable = yes
-			clipping = no
-			background = {
-				name = "speeddial_background"
-				spriteType = "GFX_invisible"
-				pdx_tooltip = "speeddial_uiod_hover"
-			}
-			effectButtonType = {
-				name = "speeddial_button_thin"
-				quadTextureSprite = "GFX_button_speeddial_thin_animated"
-				position = { x = 0 y = 0 }
-				pdx_tooltip = "speeddial_title_thin"
-				pdx_tooltip_delayed = "speeddial_desc_thin"
-				clicksound = interface
-				effect = "speeddial_button_open_options_effect"
-			}
-			###########
-			# traders #
-			###########
-			effectButtonType = {
-				name = "speeddial_button_trader"
-				quadTextureSprite = "GFX_button_speeddial_trader_animated"
-				position = { x = 0 y = 13 }
-				pdx_tooltip = "speeddial_title_trader"
-				pdx_tooltip_delayed = "speeddial_desc_trader"
-				clicksound = interface
-				effect = "speeddial_button_trader_effect"
-			}
-			effectButtonType = {
-				name = "speeddial_button_extend_trader"
-				quadTextureSprite = "GFX_button_speeddial_extend_animated"
-				position = { x = 32 y = 15 }
-				pdx_tooltip = "speeddial_title_extend_trader"
-				pdx_tooltip_delayed = "speeddial_desc_extend_trader"
-				clicksound = interface
-				effect = "speeddial_button_extend_trader_effect"
-			}
-			effectButtonType = {
-				name = "speeddial_button_retract_trader"
-				quadTextureSprite = "GFX_button_speeddial_retract_animated"
-				position = { x = 32 y = 15 }
-				pdx_tooltip = "speeddial_title_retract_trader"
-				pdx_tooltip_delayed = "speeddial_desc_retract_trader"
-				clicksound = interface
-				effect = "speeddial_button_retract_trader_effect"
-			}
-			effectButtonType = {
-				name = "speeddial_button_extend_trader_bg"
-				quadTextureSprite = "GFX_button_speeddial_extend_bg"
-				position = { x = 59 y = 24 }
-				pdx_tooltip = "speeddial_title_sdbg"
-				pdx_tooltip_delayed = "speeddial_desc_sdbg"
-				clicksound = interface
-				effect = "speeddial_button_extend_trader_effect_bg"
-			}
-			effectButtonType = {
-				name = "speeddial_button_trader_xc"
-				quadTextureSprite = "GFX_button_speeddial_trader_xc_animated"
-				position = { x = 48 y = 13 }
-				pdx_tooltip = "speeddial_title_trader"
-				pdx_tooltip_delayed = "speeddial_desc_trader"
-				clicksound = interface
-				effect = "speeddial_button_contact_trader_xc_effect"
-			}
-			effectButtonType = {
-				name = "speeddial_button_trader_rce"
-				quadTextureSprite = "GFX_button_speeddial_trader_rce_animated"
-				position = { x = 48 y = 44 }
-				pdx_tooltip = "speeddial_title_trader"
-				pdx_tooltip_delayed = "speeddial_desc_trader"
-				clicksound = interface
-				effect = "speeddial_button_contact_trader_rce_effect"
-			}
-			effectButtonType = {
-				name = "speeddial_button_trader_mmg"
-				quadTextureSprite = "GFX_button_speeddial_trader_mmg_animated"
-				position = { x = 48 y = 75 }
-				pdx_tooltip = "speeddial_title_trader"
-				pdx_tooltip_delayed = "speeddial_desc_trader"
-				clicksound = interface
-				effect = "speeddial_button_contact_trader_mmg_effect"
-			}
-			##########
-			# artist #
-			##########
-			effectButtonType = {
-				name = "speeddial_button_artist"
-				quadTextureSprite = "GFX_button_speeddial_artist_animated"
-				position = { x = 0 y = 47 }
-				pdx_tooltip = "speeddial_title_artist"
-				pdx_tooltip_delayed = "speeddial_desc_artist"
-				clicksound = interface
-				effect = "speeddial_button_artist_effect"
-			}
-			###########
-			# curator #
-			###########
-			effectButtonType = {
-				name = "speeddial_button_curator"
-				quadTextureSprite = "GFX_button_speeddial_curator_animated"
-				position = { x = 0 y = 81 }
-				pdx_tooltip = "speeddial_title_curator"
-				pdx_tooltip_delayed = "speeddial_desc_curator"
-				clicksound = interface
-				effect = "speeddial_button_curator_effect"
-			}
-			##############
-			# caravaneer #
-			##############
-			effectButtonType = {
-				name = "speeddial_button_caravaneer"
-				quadTextureSprite = "GFX_button_speeddial_caravaneer_animated"
-				position = { x = 0 y = 115 }
-				pdx_tooltip = "speeddial_title_caravaneer"
-				pdx_tooltip_delayed = "speeddial_desc_caravaneer"
-				clicksound = interface
-				effect = "speeddial_button_caravaneer_effect"
-			}
-			############
-			# marauder #
-			############
-			effectButtonType = {
-				name = "speeddial_button_marauder"
-				quadTextureSprite = "GFX_button_speeddial_marauder_animated"
-				position = { x = 0 y = 149 }
-				pdx_tooltip = "speeddial_title_trader"
-				pdx_tooltip_delayed = "speeddial_desc_trader"
-				clicksound = interface
-				effect = "speeddial_button_marauder_effect"
-			}
-			effectButtonType = {
-				name = "speeddial_button_extend_marauder"
-				quadTextureSprite = "GFX_button_speeddial_extend_animated"
-				position = { x = 32 y = 151 }
-				pdx_tooltip = "speeddial_title_extend_marauder"
-				pdx_tooltip_delayed = "speeddial_desc_extend_marauder"
-				clicksound = interface
-				effect = "speeddial_button_extend_marauder_effect"
-			}
-			effectButtonType = {
-				name = "speeddial_button_retract_marauder"
-				quadTextureSprite = "GFX_button_speeddial_retract_animated"
-				position = { x = 32 y = 151 }
-				pdx_tooltip = "speeddial_title_retract_marauder"
-				pdx_tooltip_delayed = "speeddial_desc_retract_marauder"
-				clicksound = interface
-				effect = "speeddial_button_retract_marauder_effect"
-			}
-			effectButtonType = {
-				name = "speeddial_button_extend_marauder_bg"
-				quadTextureSprite = "GFX_button_speeddial_extend_bg"
-				position = { x = 59 y = 160 }
-				pdx_tooltip = "speeddial_title_sdbg"
-				pdx_tooltip_delayed = "speeddial_desc_sdbg"
-				clicksound = interface
-				effect = "speeddial_button_extend_marauder_effect_bg"
-			}
-			effectButtonType = {
-				name = "speeddial_button_contact_m1"
-				quadTextureSprite = "GFX_button_speeddial_marauder_1_animated"
-				position = { x = 48 y = 149 }
-				pdx_tooltip = "speeddial_title_trader"
-				pdx_tooltip_delayed = "speeddial_desc_trader"
-				clicksound = interface
-				effect = "speeddial_button_contact_m1_effect"
-			}
-			effectButtonType = {
-				name = "speeddial_button_contact_m2"
-				quadTextureSprite = "GFX_button_speeddial_marauder_2_animated"
-				position = { x = 48 y = 180 }
-				pdx_tooltip = "speeddial_title_trader"
-				pdx_tooltip_delayed = "speeddial_desc_trader"
-				clicksound = interface
-				effect = "speeddial_button_contact_m2_effect"
-			}
-			effectButtonType = {
-				name = "speeddial_button_contact_m3"
-				quadTextureSprite = "GFX_button_speeddial_marauder_3_animated"
-				position = { x = 48 y = 211 }
-				pdx_tooltip = "speeddial_title_trader"
-				pdx_tooltip_delayed = "speeddial_desc_trader"
-				clicksound = interface
-				effect = "speeddial_button_contact_m3_effect"
-			}
-			############
-			# salvager #
-			############
-			effectButtonType = {
-				name = "speeddial_button_salvager"
-				quadTextureSprite = "GFX_button_speeddial_salvager_animated"
-				position = { x = 0 y = 183 }
-				pdx_tooltip = "speeddial_title_salvager"
-				pdx_tooltip_delayed = "speeddial_desc_salvager"
-				clicksound = interface
-				effect = "speeddial_button_salvager_effect"
-			}
-			################
-			# shroudwalker #
-			################
-			effectButtonType = {
-				name = "speeddial_button_shroudwalker"
-				quadTextureSprite = "GFX_button_speeddial_shroudwalker_animated"
-				position = { x = 0 y = 217 }
-				pdx_tooltip = "speeddial_title_shroudwalker"
-				pdx_tooltip_delayed = "speeddial_desc_shroudwalker"
-				clicksound = interface
-				effect = "speeddial_button_shroudwalker_effect"
-			}
-			##########
-			# shroud #
-			##########
-			effectButtonType = {
-				name = "speeddial_button_shroud"
-				quadTextureSprite = "GFX_button_speeddial_shroud_animated"
-				position = { x = 0 y = 251 }
-				pdx_tooltip = "speeddial_title_shroud"
-				pdx_tooltip_delayed = "speeddial_desc_shroud"
-				clicksound = interface
-				effect = "speeddial_button_shroud_effect"
-			}
-			########
-			# mods #
-			########
-			effectButtonType = {
-				name = "speeddial_button_merc"
-				quadTextureSprite = "GFX_button_speeddial_merc_animated"
-				position = { x = 0 y = 285 }
-				pdx_tooltip = "speeddial_title_merc"
-				pdx_tooltip_delayed = "speeddial_desc_merc"
-				clicksound = interface
-				effect = "speeddial_button_merc_effect"
-			}
-			effectButtonType = {
-				name = "speeddial_button_hfe_pirates"
-				quadTextureSprite = "GFX_button_speeddial_pirate_animated"
-				position = { x = 0 y = 319 }
-				pdx_tooltip = "speeddial_title_hfe"
-				pdx_tooltip_delayed = "speeddial_desc_hfe"
-				clicksound = interface
-				effect = "speeddial_button_hfe_pirates_effect"
-			}
-			effectButtonType = {
-				name = "speeddial_button_hfe_station"
-				quadTextureSprite = "GFX_button_speeddial_station_animated"
-				position = { x = 0 y = 353 }
-				pdx_tooltip = "speeddial_title_hfe"
-				pdx_tooltip_delayed = "speeddial_desc_hfe"
-				clicksound = interface
-				effect = "speeddial_button_hfe_station_effect"
-			}
-			effectButtonType = {
-				name = "speeddial_button_hfe_deepvoid"
-				quadTextureSprite = "GFX_button_speeddial_spaceport_docking_animated"
-				position = { x = 0 y = 387 }
-				pdx_tooltip = "speeddial_title_hfe"
-				pdx_tooltip_delayed = "speeddial_desc_hfe"
-				clicksound = interface
-				effect = "speeddial_button_hfe_deepvoid_effect"
-			}
-			effectButtonType = {
-				name = "speeddial_button_ne_hiv"
-				quadTextureSprite = "GFX_button_speeddial_ne_hiv_animated"
-				position = { x = 0 y = 421 }
-				pdx_tooltip = "speeddial_title_ne"
-				pdx_tooltip_delayed = "speeddial_desc_ne"
-				clicksound = interface
-				effect = "speeddial_button_nehive_effect"
-			}
-			effectButtonType = {
-				name = "speeddial_button_ne_mac"
-				quadTextureSprite = "GFX_button_speeddial_ne_mac_animated"
-				position = { x = 0 y = 455 }
-				pdx_tooltip = "speeddial_title_ne"
-				pdx_tooltip_delayed = "speeddial_desc_ne"
-				clicksound = interface
-				effect = "speeddial_button_nemachine_effect"
-			}
-			effectButtonType = {
-				name = "speeddial_button_ne_shr"
-				quadTextureSprite = "GFX_button_speeddial_ne_shr_animated"
-				position = { x = 0 y = 489 }
-				pdx_tooltip = "speeddial_title_ne"
-				pdx_tooltip_delayed = "speeddial_desc_ne"
-				clicksound = interface
-				effect = "speeddial_button_neshroud_effect"
-			}
-			effectButtonType = {
-				name = "speeddial_button_xno"
-				quadTextureSprite = "GFX_button_speeddial_xno_animated"
-				position = { x = 0 y = 523 }
-				pdx_tooltip = "speeddial_title_ne"
-				pdx_tooltip_delayed = "speeddial_desc_ne"
-				clicksound = interface
-				effect = "speeddial_button_xenonews_effect"
-			}
-		}
-		#######################
-		#### SPEEDDIAL END ####
-		#######################
 
 		### LEAVE SYSTEM WINDOW
 		containerWindowType = {
@@ -340,7 +34,7 @@ guiTypes = {
 			orientation = center_down
 			origo = center_up
 
-			###	BACKGROUND FOR AVOIDED SYSTEMS					
+			###	BACKGROUND FOR AVOIDED SYSTEMS
 			iconType = {
 				name = "starsystem_panel_avoid_bg"
 				spriteType = "GFX_starsystem_panel_avoid"
@@ -372,14 +66,14 @@ guiTypes = {
 			iconType = {
 				name = "claims_button_bg"
 				spriteType = "GFX_starsystem_panel_left"
-				position = { x = -205 y = 38 }				
+				position = { x = -205 y = 38 }
 			}
 
 			### BACKGROUND FOR AVOID SYSTEM BUTTON VISIBLE WHEN ENABLED
 			iconType = {
 				name = "restricted_button_bg"
 				spriteType = "GFX_starsystem_panel_right"
-				position = { x = -112 y = 46 }				
+				position = { x = -112 y = 46 }
 			}
 
 			buttonType = {
@@ -390,7 +84,7 @@ guiTypes = {
 				clicksound = interface
 				oversound = no_sound
 			}
-			
+
 			iconType = {
 				name = "map_button_bg"
 				orientation = center_up
@@ -398,7 +92,7 @@ guiTypes = {
 				spriteType = "GFX_bottombar_button_bg"
 				alwaystransparent = yes
 			}
-			
+
 			buttonType = {
 				name = "button"
 				quadTextureSprite = "GFX_open_galaxy_map"
@@ -437,7 +131,7 @@ guiTypes = {
 				fixedsize = yes
 				#text_color_code = "E"
 			}
-			
+
 			instantTextBoxType={
 				name = "system_type"
 				font = "cg_16b"
@@ -450,7 +144,7 @@ guiTypes = {
 				alwaystransparent = yes
 				fixedsize = yes
 				text_color_code = "E"
-			}			
+			}
 
 			buttonType = {
 				name = "system_rename_button"
@@ -461,30 +155,30 @@ guiTypes = {
 				pdx_tooltip = "RENAME_SYSTEM_TOOLTIP"
 				oversound = no_sound
 			}
-			
+
 			iconType = {
 				name = "environmental_effects_icon"
 				spriteType = "GFX_system_hazards_icon"
-				position = { x = 252 y = 49 }				
+				position = { x = 240 y = 43 }
 			}
 
 			buttonType = {
 				name = "claim_system_button"
 				quadTextureSprite = "GFX_claim_system_icon"
-				position = { x = -204 y = 43 }		
-			}			
+				position = { x = -204 y = 43 }
+			}
 
 			buttonType = {
 				name = "restricted_system_button"
 				quadTextureSprite = "GFX_restricted_system_icon"
-				position = { x = -112 y = 43 }		
-			}			
+				position = { x = -112 y = 43 }
+			}
 		}
 
 		### LEAVE GALAXY WINDOW
 		containerWindowType = {
 			name = "leave_galaxy_window"
-			
+
 			size = { width = 166 height = 114 }
 			hide_position = { x = 0 y = 0 }
 			show_position = { x = 0 y = -95 }
@@ -526,7 +220,7 @@ guiTypes = {
 				clicksound = interface
 				oversound = no_sound
 			}
-	
+
 			iconType = {
 				name = "map_button_bg"
 				orientation = center_up
@@ -559,7 +253,7 @@ guiTypes = {
 				alwaystransparent = yes
 				text_color_code = "H"
 			}
-			
+
 			instantTextBoxType={
 				name = "empire_name"
 				font = "large_title_font_28"
@@ -571,7 +265,7 @@ guiTypes = {
 				alwaystransparent = yes
 				fixedsize = yes
 			}
-			
+
 			instantTextBoxType={
 				name = "empire_type"
 				font = "cg_16b"
@@ -583,7 +277,7 @@ guiTypes = {
 				alwaystransparent = yes
 				fixedsize = yes
 				text_color_code = "E"
-			}	
+			}
 
 		}
 
@@ -672,19 +366,13 @@ guiTypes = {
 		containerWindowType = {
 			name = "mapmodes"
 			size = { width = 240 height = 100 }
-			position = { x = -277 y = -136 }
+			position = { x = -140 y = -136 }
 			orientation = lower_right
-			#verticalScrollBar = "right_vertical_slider"
-
-			#background = {
-			#	name = "background"
-			#	spriteType = "GFX_tiles_frame"
-			#}
 
 			gridBoxType = {
 				name = "map_modes"
 				slotSize = { width = 34 height = 34 }
-				max_slots_horizontal = 12
+				max_slots_horizontal = 4
 				format = "LOWER_LEFT"
 				orientation = "LOWER_LEFT"
 			}
@@ -701,31 +389,30 @@ guiTypes = {
 			background = {
 				name = "bg"
 				quadTextureSprite = "GFX_topbar_background"
-				position = { x = 0 y = 0  }
 			}
 
 			iconType = {
 				name = "bottombar_details"
 				spriteType = "GFX_bottombar_details"
-				position = { x= 0 y = -5 }
+				position = { x = 0 y = -5 }
 			}
 
 			buttonType = {
 				name = "button_topbar_menu"
 				quadTextureSprite = "GFX_button_60_29"
-				position = { x= -89 y = -45  }
+				position = { x = -89 y = -45 }
 				shortcut = "ESCAPE"
 				pdx_tooltip = "TOPBAR_MENU"
-				pdx_tooltip_anchor_offset = { x= 0 y = @tt_offset_y }
+				pdx_tooltip_anchor_offset = { x = 0 y = @tt_offset_y }
 				pdx_tooltip_anchor_orientation = lower_left
 				orientation = lower_right
 				clicksound = confirm_click
 			}
 
 			iconType = {
-				name ="main_menu_icon"
+				name = "main_menu_icon"
 				spriteType = "GFX_topbar_menu_button"
-				position = { x= -74 y = -33 }
+				position = { x = -74 y = -33 }
 				orientation = lower_right
 				alwaystransparent = yes
 			}
@@ -733,7 +420,7 @@ guiTypes = {
 			buttonType = {
 				name = "button_topbar_chat"
 				quadTextureSprite = "GFX_button_60_29"
-				position = { x = -221 y = -45  }
+				position = { x = -221 y = -45 }
 				orientation = lower_right
 				shortcut = "l"
 			}
@@ -749,15 +436,15 @@ guiTypes = {
 			buttonType = {
 				name = "button_topbar_help"
 				quadTextureSprite = "GFX_button_60_29"
-				position = { x = -155 y = -45  }
+				position = { x = -155 y = -45 }
 				orientation = lower_right
-				shortcut="alt+b"
+				shortcut = "alt+b"
 			}
 
 			buttonType = {
 				name = "button_topbar_help_menu"
 				quadTextureSprite = "GFX_button_60_29"
-				position = { x = -155 y = -45  }
+				position = { x = -155 y = -45 }
 				orientation = lower_right
 			}
 
@@ -769,60 +456,13 @@ guiTypes = {
 				alwaystransparent = yes
 			}
 
-			#containerWindowType = {
-			#	name = "social_view_interface_window"
-			#	position = { x= -221 y = -45 }	
-			#	size = { width=256 height=256 }
-			#	orientation = lower_right
-				
-			#	buttonType = {
-			#		name = "toggle_button"
-			#		quadTextureSprite = "GFX_button_60_29"
-			#		position = { x= 0 y = 0  }
-			#		pdx_tooltip_anchor_offset = { x= 0 y = @tt_offset_y }
-			#		pdx_tooltip_anchor_orientation = lower_left
-			#	}
-				
-			#	iconType = {
-			#		name = "button_toggle_socialview_icon"
-			#		spriteType = "GFX_socialview_icon"
-			#		position = { x= 15 y = 10 }
-			#		alwaystransparent = yes
-			#	}
-				
-			#	instantTextBoxType={
-			#		name = "friends_online"
-			#		font = "cg_16b"
-			#		position = { x= 36 y= 18 }
-			#		text = "0"
-			#		maxWidth = 30
-			#		maxHeight = 16
-			#		alwaysTransparent = yes
-			#		format = center
-			#	}
-				
-			#	iconType = {
-			#		name = "new_message"
-			#		position = { x = 60 y = 8 }
-			#		spriteType = "GFX_new_message_icon"
-			#		pdx_tooltip = "SOCIAL_NEW_MESSAGE"
-			#	}
-			#	
-			#	iconType = {
-			#		name = "new_friend"
-			#		position = { x = 60 y = 19 }
-			#		spriteType = "GFX_new_friend_icon"
-			#		pdx_tooltip = "SOCIAL_NEW_FRIEND"
-			#	}
-			#}
-			
 			buttonType = {
 				name = "toggle_gotobox"
 				quadTextureSprite = "GFX_button_60_29"
-				position = { x= -287 y = -45  }
+				position = { x = -287 y = -45 }
 				shortCut = "f"
 				pdx_tooltip = "GOTOBOX_HEADER"
-				pdx_tooltip_anchor_offset = { x= 0 y = @tt_offset_y }
+				pdx_tooltip_anchor_offset = { x = 0 y = @tt_offset_y }
 				pdx_tooltip_anchor_orientation = lower_left
 				orientation = lower_right
 				clicksound = confirm_click
@@ -831,7 +471,7 @@ guiTypes = {
 			iconType = {
 				name = "toggle_gotobox_icon"
 				spriteType = "GFX_search_icon"
-				position = { x= -271 y = -35 }
+				position = { x = -271 y = -35 }
 				orientation = lower_right
 				alwaystransparent = yes
 			}
@@ -842,7 +482,7 @@ guiTypes = {
 				position = { x= -353 y = -45  }
 				shortCut = "HOME"
 				pdx_tooltip = "GOTO_HOME"
-				pdx_tooltip_anchor_offset = { x= 0 y = @tt_offset_y }
+				pdx_tooltip_anchor_offset = { x = 0 y = @tt_offset_y }
 				pdx_tooltip_anchor_orientation = lower_left
 				orientation = lower_right
 				shortCut = "BACKSPACE"
@@ -851,7 +491,7 @@ guiTypes = {
 			iconType = {
 				name = "home_icon"
 				spriteType = "GFX_home_icon"
-				position = { x= -338 y = -33 }
+				position = { x = -338 y = -33 }
 				orientation = lower_right
 				alwaystransparent = yes
 			}
@@ -870,9 +510,8 @@ guiTypes = {
 			buttonType = {
 				name = "toggle_mapmode_details"
 				quadTextureSprite = "GFX_button_29_animated_survey"
-				position = { x= -386 y = -45  }
-				pdx_tooltip = "TOGGLE_MAPMODE_DETAILS_INFO"
-				pdx_tooltip_anchor_offset = { x= 0 y = @tt_offset_y }
+				position = { x = -386 y = -45 }
+				pdx_tooltip_anchor_offset = { x = 0 y = @tt_offset_y }
 				pdx_tooltip_anchor_orientation = lower_left
 				orientation = lower_right
 			}
@@ -880,7 +519,7 @@ guiTypes = {
 			iconType = {
 				name = "toggle_mapmode_icon_sectors"
 				spriteType = "GFX_map_mode_sectors"
-				position = { x = -380 y = -70 }
+				position = { x = -216 y = -70 }
 				orientation = "LOWER_RIGHT"
 				alwaystransparent = yes
 			}
@@ -888,17 +527,16 @@ guiTypes = {
  			buttonType = {
 				name = "toggle_mapmode_sectors"
 				quadTextureSprite = "GFX_button_29_animated"
-				position = { x= -391 y = -82  }
-				pdx_tooltip = "TOGGLE_MAPMODE_SECTORS_INFO"
-				pdx_tooltip_anchor_offset = { x= 0 y = @tt_offset_y }
+				position = { x = -228 y = -82 }
+				pdx_tooltip_anchor_offset = { x = 0 y = @tt_offset_y }
 				pdx_tooltip_anchor_orientation = lower_left
 				orientation = lower_right
 			}
-			
+
 			iconType = {
 				name = "toggle_mapmode_icon_hyperlanes"
 				spriteType = "GFX_map_mode_hyperlanes"
-				position = { x = -346 y = -70 }
+				position = { x = -183 y = -70 }
 				orientation = "LOWER_RIGHT"
 				alwaystransparent = yes
 			}
@@ -906,9 +544,8 @@ guiTypes = {
 			buttonType = {
 				name = "toggle_mapmode_hyperlanes"
 				quadTextureSprite = "GFX_button_29_animated"
-				position = { x= -358 y = -82  }
-				pdx_tooltip = "TOGGLE_MAPMODE_HYPERLANES_INFO"
-				pdx_tooltip_anchor_offset = { x= 0 y = @tt_offset_y }
+				position = { x = -195 y = -82 }
+				pdx_tooltip_anchor_offset = { x = 0 y = @tt_offset_y }
 				pdx_tooltip_anchor_orientation = lower_left
 				orientation = lower_right
 			}
@@ -916,7 +553,7 @@ guiTypes = {
 			iconType = {
 				name = "toggle_mapmode_icon_trade_routes"
 				spriteType = "GFX_map_mode_trade_routes"
-				position = { x = -346 y = -103 }
+				position = { x = -216 y = -103 }
 				orientation = "LOWER_RIGHT"
 				alwaystransparent = yes
 			}
@@ -924,27 +561,8 @@ guiTypes = {
  			buttonType = {
 				name = "toggle_mapmode_trade_routes"
 				quadTextureSprite = "GFX_button_29_animated"
-				position = { x= -358 y = -115  }
-				pdx_tooltip = "TOGGLE_MAPMODE_TRADE_ROUTES_INFO"
-				pdx_tooltip_anchor_offset = { x= 0 y = @tt_offset_y }
-				pdx_tooltip_anchor_orientation = lower_left
-				orientation = lower_right
-			}
-
-			iconType = {
-				name = "toggle_mapmode_icon_unions"
-				spriteType = "GFX_map_mode_unions"
-				position = { x = -313 y = -70 }
-				orientation = "LOWER_RIGHT"
-				alwaystransparent = yes
-			}
-
- 			buttonType = {
-				name = "toggle_mapmode_unions"
-				quadTextureSprite = "GFX_button_29_animated"
-				position = { x= -325 y = -82  }
-				pdx_tooltip = "TOGGLE_MAPMODE_UNIONS_INFO"
-				pdx_tooltip_anchor_offset = { x= 0 y = @tt_offset_y }
+				position = { x = -228 y = -115 }
+				pdx_tooltip_anchor_offset = { x = 0 y = @tt_offset_y }
 				pdx_tooltip_anchor_orientation = lower_left
 				orientation = lower_right
 			}
@@ -952,7 +570,7 @@ guiTypes = {
 			iconType = {
 				name = "toggle_mapmode_icon_players"
 				spriteType = "GFX_map_mode_players"
-				position = { x = -379 y = -103 }
+				position = { x = -183 y = -103 }
 				orientation = "LOWER_RIGHT"
 				alwaystransparent = yes
 			}
@@ -960,11 +578,19 @@ guiTypes = {
 			buttonType = {
 				name = "toggle_mapmode_players"
 				quadTextureSprite = "GFX_button_29_animated"
-				position = { x = -391 y = -115 }
-				pdx_tooltip = "TOGGLE_MAPMODE_PLAYERS_INFO"
-				pdx_tooltip_anchor_offset = { x= 0 y = @tt_offset_y }
+				position = { x = -195 y = -115 }
+				pdx_tooltip_anchor_offset = { x = 0 y = @tt_offset_y }
 				pdx_tooltip_anchor_orientation = lower_left
 				orientation = lower_right
+			}
+
+			iconType = {
+				name = "mapmode_divider"
+				spriteType = "GFX_vertical_divider"
+				position = { x = -148 y = -102 }
+				scale = 2.0
+				orientation = "LOWER_RIGHT"
+				alwaysTransparent = yes
 			}
 
 			## Error Log
@@ -972,7 +598,7 @@ guiTypes = {
 			buttonType = {
 				name = "error_log_button"
 				quadTextureSprite = "GFX_error_log_button"
-				position = { x= -110 y = -68 }
+				position = { x = -380 y = -68 }
 				text = "ERROR"
 				buttonFont = "cg_16b"
 				Orientation = "LOWER_RIGHT"
