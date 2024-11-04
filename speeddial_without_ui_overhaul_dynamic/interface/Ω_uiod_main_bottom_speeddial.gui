@@ -22,6 +22,312 @@ guiTypes = {
 			format = left
 		}
 
+		###################
+		#### SPEEDDIAL ####
+		###################
+		containerWindowType = {
+			name = "speeddial"
+			size = { width = 53 height = 30 }
+			position = { x = 30 y = 121 }
+			moveable = yes
+			clipping = no
+			background = {
+				name = "speeddial_background"
+				spriteType = "GFX_invisible"
+				pdx_tooltip = "speeddial_uiod_hover"
+			}
+			effectButtonType = {
+				name = "speeddial_button_thin"
+				quadTextureSprite = "GFX_button_speeddial_thin_animated"
+				position = { x = 0 y = 0 }
+				pdx_tooltip = "speeddial_title_thin"
+				pdx_tooltip_delayed = "speeddial_desc_thin"
+				clicksound = interface
+				effect = "speeddial_button_open_options_effect"
+			}
+			###########
+			# traders #
+			###########
+			effectButtonType = {
+				name = "speeddial_button_trader"
+				quadTextureSprite = "GFX_button_speeddial_trader_animated"
+				position = { x = 0 y = 13 }
+				pdx_tooltip = "speeddial_title_trader"
+				pdx_tooltip_delayed = "speeddial_desc_trader"
+				clicksound = interface
+				effect = "speeddial_button_trader_effect"
+			}
+			effectButtonType = {
+				name = "speeddial_button_extend_trader"
+				quadTextureSprite = "GFX_button_speeddial_extend_animated"
+				position = { x = 32 y = 15 }
+				pdx_tooltip = "speeddial_title_extend_trader"
+				pdx_tooltip_delayed = "speeddial_desc_extend_trader"
+				clicksound = interface
+				effect = "speeddial_button_extend_trader_effect"
+			}
+			effectButtonType = {
+				name = "speeddial_button_retract_trader"
+				quadTextureSprite = "GFX_button_speeddial_retract_animated"
+				position = { x = 32 y = 15 }
+				pdx_tooltip = "speeddial_title_retract_trader"
+				pdx_tooltip_delayed = "speeddial_desc_retract_trader"
+				clicksound = interface
+				effect = "speeddial_button_retract_trader_effect"
+			}
+			effectButtonType = {
+				name = "speeddial_button_extend_trader_bg"
+				quadTextureSprite = "GFX_button_speeddial_extend_bg"
+				position = { x = 59 y = 24 }
+				pdx_tooltip = "speeddial_title_sdbg"
+				pdx_tooltip_delayed = "speeddial_desc_sdbg"
+				clicksound = interface
+				effect = "speeddial_button_extend_trader_effect_bg"
+			}
+			effectButtonType = {
+				name = "speeddial_button_trader_xc"
+				quadTextureSprite = "GFX_button_speeddial_trader_xc_animated"
+				position = { x = 48 y = 13 }
+				pdx_tooltip = "speeddial_title_trader"
+				pdx_tooltip_delayed = "speeddial_desc_trader"
+				clicksound = interface
+				effect = "speeddial_button_contact_trader_xc_effect"
+			}
+			effectButtonType = {
+				name = "speeddial_button_trader_rce"
+				quadTextureSprite = "GFX_button_speeddial_trader_rce_animated"
+				position = { x = 48 y = 44 }
+				pdx_tooltip = "speeddial_title_trader"
+				pdx_tooltip_delayed = "speeddial_desc_trader"
+				clicksound = interface
+				effect = "speeddial_button_contact_trader_rce_effect"
+			}
+			effectButtonType = {
+				name = "speeddial_button_trader_mmg"
+				quadTextureSprite = "GFX_button_speeddial_trader_mmg_animated"
+				position = { x = 48 y = 75 }
+				pdx_tooltip = "speeddial_title_trader"
+				pdx_tooltip_delayed = "speeddial_desc_trader"
+				clicksound = interface
+				effect = "speeddial_button_contact_trader_mmg_effect"
+			}
+			##########
+			# artist #
+			##########
+			effectButtonType = {
+				name = "speeddial_button_artist"
+				quadTextureSprite = "GFX_button_speeddial_artist_animated"
+				position = { x = 0 y = 47 }
+				pdx_tooltip = "speeddial_title_artist"
+				pdx_tooltip_delayed = "speeddial_desc_artist"
+				clicksound = interface
+				effect = "speeddial_button_artist_effect"
+			}
+			###########
+			# curator #
+			###########
+			effectButtonType = {
+				name = "speeddial_button_curator"
+				quadTextureSprite = "GFX_button_speeddial_curator_animated"
+				position = { x = 0 y = 81 }
+				pdx_tooltip = "speeddial_title_curator"
+				pdx_tooltip_delayed = "speeddial_desc_curator"
+				clicksound = interface
+				effect = "speeddial_button_curator_effect"
+			}
+			##############
+			# caravaneer #
+			##############
+			effectButtonType = {
+				name = "speeddial_button_caravaneer"
+				quadTextureSprite = "GFX_button_speeddial_caravaneer_animated"
+				position = { x = 0 y = 115 }
+				pdx_tooltip = "speeddial_title_caravaneer"
+				pdx_tooltip_delayed = "speeddial_desc_caravaneer"
+				clicksound = interface
+				effect = "speeddial_button_caravaneer_effect"
+			}
+			############
+			# marauder #
+			############
+			effectButtonType = {
+				name = "speeddial_button_marauder"
+				quadTextureSprite = "GFX_button_speeddial_marauder_animated"
+				position = { x = 0 y = 149 }
+				pdx_tooltip = "speeddial_title_trader"
+				pdx_tooltip_delayed = "speeddial_desc_trader"
+				clicksound = interface
+				effect = "speeddial_button_marauder_effect"
+			}
+			effectButtonType = {
+				name = "speeddial_button_extend_marauder"
+				quadTextureSprite = "GFX_button_speeddial_extend_animated"
+				position = { x = 32 y = 151 }
+				pdx_tooltip = "speeddial_title_extend_marauder"
+				pdx_tooltip_delayed = "speeddial_desc_extend_marauder"
+				clicksound = interface
+				effect = "speeddial_button_extend_marauder_effect"
+			}
+			effectButtonType = {
+				name = "speeddial_button_retract_marauder"
+				quadTextureSprite = "GFX_button_speeddial_retract_animated"
+				position = { x = 32 y = 151 }
+				pdx_tooltip = "speeddial_title_retract_marauder"
+				pdx_tooltip_delayed = "speeddial_desc_retract_marauder"
+				clicksound = interface
+				effect = "speeddial_button_retract_marauder_effect"
+			}
+			effectButtonType = {
+				name = "speeddial_button_extend_marauder_bg"
+				quadTextureSprite = "GFX_button_speeddial_extend_bg"
+				position = { x = 59 y = 160 }
+				pdx_tooltip = "speeddial_title_sdbg"
+				pdx_tooltip_delayed = "speeddial_desc_sdbg"
+				clicksound = interface
+				effect = "speeddial_button_extend_marauder_effect_bg"
+			}
+			effectButtonType = {
+				name = "speeddial_button_contact_m1"
+				quadTextureSprite = "GFX_button_speeddial_marauder_1_animated"
+				position = { x = 48 y = 149 }
+				pdx_tooltip = "speeddial_title_trader"
+				pdx_tooltip_delayed = "speeddial_desc_trader"
+				clicksound = interface
+				effect = "speeddial_button_contact_m1_effect"
+			}
+			effectButtonType = {
+				name = "speeddial_button_contact_m2"
+				quadTextureSprite = "GFX_button_speeddial_marauder_2_animated"
+				position = { x = 48 y = 180 }
+				pdx_tooltip = "speeddial_title_trader"
+				pdx_tooltip_delayed = "speeddial_desc_trader"
+				clicksound = interface
+				effect = "speeddial_button_contact_m2_effect"
+			}
+			effectButtonType = {
+				name = "speeddial_button_contact_m3"
+				quadTextureSprite = "GFX_button_speeddial_marauder_3_animated"
+				position = { x = 48 y = 211 }
+				pdx_tooltip = "speeddial_title_trader"
+				pdx_tooltip_delayed = "speeddial_desc_trader"
+				clicksound = interface
+				effect = "speeddial_button_contact_m3_effect"
+			}
+			############
+			# salvager #
+			############
+			effectButtonType = {
+				name = "speeddial_button_salvager"
+				quadTextureSprite = "GFX_button_speeddial_salvager_animated"
+				position = { x = 0 y = 183 }
+				pdx_tooltip = "speeddial_title_salvager"
+				pdx_tooltip_delayed = "speeddial_desc_salvager"
+				clicksound = interface
+				effect = "speeddial_button_salvager_effect"
+			}
+			################
+			# shroudwalker #
+			################
+			effectButtonType = {
+				name = "speeddial_button_shroudwalker"
+				quadTextureSprite = "GFX_button_speeddial_shroudwalker_animated"
+				position = { x = 0 y = 217 }
+				pdx_tooltip = "speeddial_title_shroudwalker"
+				pdx_tooltip_delayed = "speeddial_desc_shroudwalker"
+				clicksound = interface
+				effect = "speeddial_button_shroudwalker_effect"
+			}
+			##########
+			# shroud #
+			##########
+			effectButtonType = {
+				name = "speeddial_button_shroud"
+				quadTextureSprite = "GFX_button_speeddial_shroud_animated"
+				position = { x = 0 y = 251 }
+				pdx_tooltip = "speeddial_title_shroud"
+				pdx_tooltip_delayed = "speeddial_desc_shroud"
+				clicksound = interface
+				effect = "speeddial_button_shroud_effect"
+			}
+			########
+			# mods #
+			########
+			effectButtonType = {
+				name = "speeddial_button_merc"
+				quadTextureSprite = "GFX_button_speeddial_merc_animated"
+				position = { x = 0 y = 285 }
+				pdx_tooltip = "speeddial_title_merc"
+				pdx_tooltip_delayed = "speeddial_desc_merc"
+				clicksound = interface
+				effect = "speeddial_button_merc_effect"
+			}
+			effectButtonType = {
+				name = "speeddial_button_hfe_pirates"
+				quadTextureSprite = "GFX_button_speeddial_pirate_animated"
+				position = { x = 0 y = 319 }
+				pdx_tooltip = "speeddial_title_hfe"
+				pdx_tooltip_delayed = "speeddial_desc_hfe"
+				clicksound = interface
+				effect = "speeddial_button_hfe_pirates_effect"
+			}
+			effectButtonType = {
+				name = "speeddial_button_hfe_station"
+				quadTextureSprite = "GFX_button_speeddial_station_animated"
+				position = { x = 0 y = 353 }
+				pdx_tooltip = "speeddial_title_hfe"
+				pdx_tooltip_delayed = "speeddial_desc_hfe"
+				clicksound = interface
+				effect = "speeddial_button_hfe_station_effect"
+			}
+			effectButtonType = {
+				name = "speeddial_button_hfe_deepvoid"
+				quadTextureSprite = "GFX_button_speeddial_spaceport_docking_animated"
+				position = { x = 0 y = 387 }
+				pdx_tooltip = "speeddial_title_hfe"
+				pdx_tooltip_delayed = "speeddial_desc_hfe"
+				clicksound = interface
+				effect = "speeddial_button_hfe_deepvoid_effect"
+			}
+			effectButtonType = {
+				name = "speeddial_button_ne_hiv"
+				quadTextureSprite = "GFX_button_speeddial_ne_hiv_animated"
+				position = { x = 0 y = 421 }
+				pdx_tooltip = "speeddial_title_ne"
+				pdx_tooltip_delayed = "speeddial_desc_ne"
+				clicksound = interface
+				effect = "speeddial_button_nehive_effect"
+			}
+			effectButtonType = {
+				name = "speeddial_button_ne_mac"
+				quadTextureSprite = "GFX_button_speeddial_ne_mac_animated"
+				position = { x = 0 y = 455 }
+				pdx_tooltip = "speeddial_title_ne"
+				pdx_tooltip_delayed = "speeddial_desc_ne"
+				clicksound = interface
+				effect = "speeddial_button_nemachine_effect"
+			}
+			effectButtonType = {
+				name = "speeddial_button_ne_shr"
+				quadTextureSprite = "GFX_button_speeddial_ne_shr_animated"
+				position = { x = 0 y = 489 }
+				pdx_tooltip = "speeddial_title_ne"
+				pdx_tooltip_delayed = "speeddial_desc_ne"
+				clicksound = interface
+				effect = "speeddial_button_neshroud_effect"
+			}
+			effectButtonType = {
+				name = "speeddial_button_xno"
+				quadTextureSprite = "GFX_button_speeddial_xno_animated"
+				position = { x = 0 y = 523 }
+				pdx_tooltip = "speeddial_title_ne"
+				pdx_tooltip_delayed = "speeddial_desc_ne"
+				clicksound = interface
+				effect = "speeddial_button_xenonews_effect"
+			}
+		}
+		#######################
+		#### SPEEDDIAL END ####
+		#######################
 
 		### LEAVE SYSTEM WINDOW
 		containerWindowType = {
