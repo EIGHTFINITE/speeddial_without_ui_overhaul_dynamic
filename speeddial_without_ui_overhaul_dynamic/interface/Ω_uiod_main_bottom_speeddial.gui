@@ -666,7 +666,7 @@ guiTypes = {
 			clipping = no
 			background = {
 				name = "speeddial_background"
-				spriteType = "GFX_invisible"
+				spriteType = "GFX_invisible_speedDial"
 				pdx_tooltip = "speeddial_uiod_hover"
 			}
 			effectButtonType = {
