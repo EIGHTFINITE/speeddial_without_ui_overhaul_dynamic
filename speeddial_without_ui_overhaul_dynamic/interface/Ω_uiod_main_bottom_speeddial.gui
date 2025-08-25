@@ -28,7 +28,7 @@ guiTypes = {
 		containerWindowType = {
 			name = "speeddial"
 			size = { width = 53 height = 30 }
-			position = { x = 60 y = 140 }
+			position = { x = 30 y = 121 }
 			moveable = yes
 			clipping = no
 			background = {
