@@ -70,16 +70,6 @@ guiTypes = {
 				centerPosition = yes
 				alwaysTransparent = yes
 			}
-			instantTextBoxType = {
-				name = "paused"
-				font = "large_title_font"
-				text = "" # "GAME_SPEED_0"
-				position = { x = 0 y = 0 }
-				maxWidth = 1
-				maxHeight = 1
-				fixedSize = yes
-				alwaysTransparent = yes
-			}
 			iconType = {
 				name = "system_unclaimed_icon"
 				spriteType = "GFX_ui_system_unclaimed"
@@ -91,8 +81,8 @@ guiTypes = {
 				name = "flag_button"
 				quadTextureSprite = "GFX_empire_flag_64"
 				position = { x = -10 y = 0 }
-				clicksound = interface
-				oversound = no_sound
+				clicksound = "interface"
+				oversound = "no_sound"
 			}
 			buttonType = {
 				name = "button"
@@ -101,8 +91,21 @@ guiTypes = {
 				position = { x = 184 y = 6 }
 				pdx_tooltip_anchor_offset = { x = 0 y = @tt_offset_y }
 				pdx_tooltip_anchor_orientation = upper_right
-				clicksound = ui_galaxy_map_open
-				oversound = mouse_over
+				clicksound = "ui_galaxy_map_open"
+				oversound = "mouse_over"
+			}
+			instantTextBoxType = {
+				name = "paused"
+				font = "font_text_14"
+				text = "GAME_SPEED_0"
+				position = { x = 57 y = 36 }
+				maxWidth = 80
+				maxHeight = 20
+				fixedSize = yes
+				format = left
+				vertical_alignment = center
+				text_color_code = "3"
+				alwaysTransparent = yes
 			}
 			instantTextBoxType = {
 				name = "system_name"
@@ -138,7 +141,7 @@ guiTypes = {
 				orientation = center_up
 				size = { x = 330 y = 45 }
 				pdx_tooltip = "RENAME_SYSTEM_TOOLTIP"
-				oversound = no_sound
+				oversound = "no_sound"
 			}
 			iconType = {
 				name = "environmental_effects_icon"
@@ -191,17 +194,20 @@ guiTypes = {
 				name = "flag_button_galaxy_view"
 				quadTextureSprite = "GFX_empire_flag_64"
 				position = { x = -10 y = 0 }
-				clicksound = interface
-				oversound = no_sound
+				clicksound = "interface"
+				oversound = "no_sound"
 			}
 			instantTextBoxType = {
 				name = "paused"
-				font = "large_title_font"
-				text = "" # "GAME_SPEED_0"
-				position = { x = 0 y = 0 }
-				maxWidth = 1
-				maxHeight = 1
+				font = "font_text_14"
+				text = "GAME_SPEED_0"
+				position = { x = 57 y = 36 }
+				maxWidth = 80
+				maxHeight = 20
 				fixedSize = yes
+				format = left
+				vertical_alignment = center
+				text_color_code = "3"
 				alwaysTransparent = yes
 			}
 			instantTextBoxType = {
@@ -236,8 +242,8 @@ guiTypes = {
 				position = { x = 184 y = 6 }
 				pdx_tooltip_anchor_offset = { x = 0 y = @tt_offset_y }
 				pdx_tooltip_anchor_orientation = lower_left
-				clicksound = ui_galaxy_map_close
-				oversound = mouse_over
+				clicksound = "ui_galaxy_map_close"
+				oversound = "mouse_over"
 			}
 		}
 		## Claims Management
@@ -292,57 +298,6 @@ guiTypes = {
 				pdx_tooltip = "TOOLTIP_CLOSE_CLAIMS_MANAGEMENT"
 			}
 		}
-		## Trade Routes Management
-		containerWindowType = {
-			name = "trade_routes_management"
-			size = { width = 406 height = 107 }
-			hide_position = { x = 0 y = 100% }
-			show_position = { x = 0 y = 0 }
-			animation_type = smoothstep
-			animation_time = 300
-			orientation = center_down
-			origo = center_down
-			background = {
-				name = "background"
-				spriteType = "GFX_invisible"
-				alwaysTransparent = yes
-			}
-			iconType = {
-				name = "manage_bar_background"
-				spriteType = "GFX_ui_mapmode_manage"
-				position = { x = 0 y = 28 }
-				alwaysTransparent = yes
-				orientation = center_up
-				centerPosition = yes
-			}
-			instantTextBoxType = {
-				name = "status"
-				font = "font_text_18"
-				text = "TRADE_ROUTES_MANAGEMENT_MODE"
-				position = { x = -125 y = 3 }
-				orientation = center_up
-				maxWidth = 250
-				maxHeight = 50
-				format = center
-				vertical_alignment = center
-				alwaysTransparent = yes
-			}
-			iconType = {
-				name = "system_button_panel"
-				spriteType = "GFX_system_button_panel"
-				position = { x = 0 y = 55 }
-				alwaysTransparent = yes
-			}
-			buttonType = {
-				name = "close"
-				quadTextureSprite = "GFX_standard_button_230_34_button"
-				position = { x = -126 y = 52 }
-				orientation = center_up
-				buttonText = "CLOSE"
-				buttonFont = "font_text_14"
-				pdx_tooltip = "TOOLTIP_CLOSE_TRADE_ROUTES_MANAGEMENT_MODE"
-			}
-		}
 		# Map Modes
 		containerWindowType = {
 			name = "mapmodes_background"
@@ -386,7 +341,7 @@ guiTypes = {
 			origo = lower_right
 			if_scaled_resolution = {
 				min_width = 1650
-				size = { width = 255 height = 68 }
+				size = { width = 270 height = 68 }
 			}
 			if_scaled_resolution = {
 				min_width = 1920
@@ -421,7 +376,7 @@ guiTypes = {
 				orientation = upper_right
 				if_scaled_resolution = {
 					min_width = 1650
-					position = { x = -261 y = 0 }
+					position = { x = -271 y = 0 }
 					max_slots_horizontal = 8
 				}
 				if_scaled_resolution = {
@@ -491,7 +446,7 @@ guiTypes = {
 				pdx_tooltip = "TOPBAR_MENU"
 				pdx_tooltip_anchor_offset = { x = 0 y = @tt_offset_y }
 				pdx_tooltip_anchor_orientation = lower_left
-				clicksound = confirm_click
+				clicksound = "confirm_click"
 			}
 			iconType = {
 				name = "main_menu_icon"
@@ -500,18 +455,6 @@ guiTypes = {
 				orientation = upper_right
 				alwaysTransparent = yes
 			}
-			#buttonType = {
-			#	name = "button_ui"
-			#	quadTextureSprite = "GFX_button_60_29"
-			#	position = { x = @button_2_button_x y = -9 }
-			#	clicksound = confirm_click
-			#	buttonText = "UI_OVERHAUL_BUTTON"
-			#	pdx_tooltip = "UI_OVERHAUL_TOOLTIP"
-			#	pdx_tooltip_anchor_offset = { x = 0 y = @tt_offset_y }
-			#	pdx_tooltip_anchor_orientation = lower_left
-			#	font = "large_title_font"
-			#	web_link = "https://steamcommunity.com/sharedfiles/filedetails/?id=1623423360"
-			#}
 			buttonType = {
 				name = "button_topbar_chat"
 				quadTextureSprite = "GFX_button_60_29"
@@ -525,7 +468,7 @@ guiTypes = {
 				alwaysTransparent = yes
 			}
 			buttonType = {
-				name = "button_topbar_help"
+				name = "button_topbar_help" # Help (databank) during normal gameplay.
 				quadTextureSprite = "GFX_button_60_29"
 				position = { x = @button_3_button_x y = -9 }
 				pdx_tooltip_anchor_offset = { x = 0 y = @tt_offset_y }
@@ -533,13 +476,13 @@ guiTypes = {
 				shortcut = "alt+b"
 			}
 			buttonType = {
-				name = "button_topbar_help_menu"
+				name = "button_topbar_help_menu" # Help for the tutorial!
 				quadTextureSprite = "GFX_button_60_29"
 				position = { x = @button_3_button_x y = -9 }
 			}
 			iconType = {
 				name = "help_icon"
-				spriteType = "GFX_help_icon"
+				spriteType = "GFX_databank_icon"
 				position = { x = @button_3_icon_x y = 1 }
 				alwaysTransparent = yes
 			}
@@ -551,7 +494,7 @@ guiTypes = {
 				pdx_tooltip = "GOTOBOX_HEADER"
 				pdx_tooltip_anchor_offset = { x = 0 y = @tt_offset_y }
 				pdx_tooltip_anchor_orientation = lower_left
-				clicksound = confirm_click
+				clicksound = "confirm_click"
 			}
 			iconType = {
 				name = "toggle_gotobox_icon"
@@ -576,6 +519,13 @@ guiTypes = {
 				alwaysTransparent = yes
 			}
 			## Filters
+			buttonType = {
+				name = "toggle_mapmode_details"
+				quadTextureSprite = "GFX_button_29_animated_survey_dark"
+				position = { x = -8 y = -44 }
+				pdx_tooltip_anchor_offset = { x = 0 y = @tt_offset_y }
+				pdx_tooltip_anchor_orientation = lower_left
+			}
 			iconType = {
 				name = "toggle_mapmode_icon_details"
 				spriteType = "GFX_mapmode"
@@ -583,14 +533,14 @@ guiTypes = {
 				frame = 9
 				alwaysTransparent = yes
 			}
+			### MAP ICONS
 			buttonType = {
-				name = "toggle_mapmode_details"
-				quadTextureSprite = "GFX_button_29_animated_survey"
-				position = { x = -8 y = -44 }
+				name = "toggle_mapmode_sectors"
+				quadTextureSprite = "GFX_button_29_animated_dark"
+				position = { x = 24 y = -44 }
 				pdx_tooltip_anchor_offset = { x = 0 y = @tt_offset_y }
 				pdx_tooltip_anchor_orientation = lower_left
 			}
-			### MAP ICONS
 			iconType = {
 				name = "toggle_mapmode_icon_sectors"
 				spriteType = "GFX_map_mode_sectors"
@@ -598,9 +548,9 @@ guiTypes = {
 				alwaysTransparent = yes
 			}
 			buttonType = {
-				name = "toggle_mapmode_sectors"
-				quadTextureSprite = "GFX_button_29_animated"
-				position = { x = 24 y = -44 }
+				name = "toggle_mapmode_hyperlanes"
+				quadTextureSprite = "GFX_button_29_animated_dark"
+				position = { x = 56 y = -44 }
 				pdx_tooltip_anchor_offset = { x = 0 y = @tt_offset_y }
 				pdx_tooltip_anchor_orientation = lower_left
 			}
@@ -611,38 +561,18 @@ guiTypes = {
 				alwaysTransparent = yes
 			}
 			buttonType = {
-				name = "toggle_mapmode_hyperlanes"
-				quadTextureSprite = "GFX_button_29_animated"
-				position = { x = 56 y = -44 }
-				pdx_tooltip_anchor_offset = { x = 0 y = @tt_offset_y }
-				pdx_tooltip_anchor_orientation = lower_left
-			}
-			iconType = {
-				name = "toggle_mapmode_icon_trade_routes"
-				spriteType = "GFX_map_mode_trade_routes"
-				position = { x = 100 y = -32 }
-				alwaysTransparent = yes
-			}
-			buttonType = {
-				name = "toggle_mapmode_trade_routes"
-				quadTextureSprite = "GFX_button_29_animated"
+				name = "toggle_mapmode_players"
+				quadTextureSprite = "GFX_button_29_animated_dark"
 				position = { x = 88 y = -44 }
+				pdx_tooltip = "TOGGLE_MAPMODE_PLAYERS_INFO"
 				pdx_tooltip_anchor_offset = { x = 0 y = @tt_offset_y }
 				pdx_tooltip_anchor_orientation = lower_left
 			}
 			iconType = {
 				name = "toggle_mapmode_icon_players"
 				spriteType = "GFX_map_mode_players"
-				position = { x = 132 y = -32 }
+				position = { x = 100 y = -32 }
 				alwaysTransparent = yes
-			}
-			buttonType = {
-				name = "toggle_mapmode_players"
-				quadTextureSprite = "GFX_button_29_animated"
-				position = { x = 120 y = -44 }
-				pdx_tooltip = "TOGGLE_MAPMODE_PLAYERS_INFO"
-				pdx_tooltip_anchor_offset = { x = 0 y = @tt_offset_y }
-				pdx_tooltip_anchor_orientation = lower_left
 			}
 			## Error Log
 			buttonType = {
@@ -652,7 +582,7 @@ guiTypes = {
 				text = "ERROR"
 				buttonFont = "font_text_14"
 				orientation = lower_right
-				oversound = no_sound
+				oversound = "no_sound"
 			}
 		}
 		###################
@@ -675,7 +605,7 @@ guiTypes = {
 				position = { x = 0 y = 0 }
 				pdx_tooltip = "speeddial_title_thin"
 				pdx_tooltip_delayed = "speeddial_desc_thin"
-				clicksound = interface
+				clicksound = "interface"
 				effect = "speeddial_button_open_options_effect"
 			}
 			###########
@@ -687,7 +617,7 @@ guiTypes = {
 				position = { x = 0 y = 13 }
 				pdx_tooltip = "speeddial_title_trader"
 				pdx_tooltip_delayed = "speeddial_desc_trader"
-				clicksound = interface
+				clicksound = "interface"
 				effect = "speeddial_button_trader_effect"
 			}
 			effectButtonType = {
@@ -696,7 +626,7 @@ guiTypes = {
 				position = { x = 32 y = 15 }
 				pdx_tooltip = "speeddial_title_extend_trader"
 				pdx_tooltip_delayed = "speeddial_desc_extend_trader"
-				clicksound = interface
+				clicksound = "interface"
 				effect = "speeddial_button_extend_trader_effect"
 			}
 			effectButtonType = {
@@ -705,7 +635,7 @@ guiTypes = {
 				position = { x = 32 y = 15 }
 				pdx_tooltip = "speeddial_title_retract_trader"
 				pdx_tooltip_delayed = "speeddial_desc_retract_trader"
-				clicksound = interface
+				clicksound = "interface"
 				effect = "speeddial_button_retract_trader_effect"
 			}
 			effectButtonType = {
@@ -714,7 +644,7 @@ guiTypes = {
 				position = { x = 59 y = 24 }
 				pdx_tooltip = "speeddial_title_sdbg"
 				pdx_tooltip_delayed = "speeddial_desc_sdbg"
-				clicksound = interface
+				clicksound = "interface"
 				effect = "speeddial_button_extend_trader_effect_bg"
 			}
 			effectButtonType = {
@@ -723,7 +653,7 @@ guiTypes = {
 				position = { x = 48 y = 13 }
 				pdx_tooltip = "speeddial_title_trader"
 				pdx_tooltip_delayed = "speeddial_desc_trader"
-				clicksound = interface
+				clicksound = "interface"
 				effect = "speeddial_button_contact_trader_xc_effect"
 			}
 			effectButtonType = {
@@ -732,7 +662,7 @@ guiTypes = {
 				position = { x = 48 y = 44 }
 				pdx_tooltip = "speeddial_title_trader"
 				pdx_tooltip_delayed = "speeddial_desc_trader"
-				clicksound = interface
+				clicksound = "interface"
 				effect = "speeddial_button_contact_trader_rce_effect"
 			}
 			effectButtonType = {
@@ -741,7 +671,7 @@ guiTypes = {
 				position = { x = 48 y = 75 }
 				pdx_tooltip = "speeddial_title_trader"
 				pdx_tooltip_delayed = "speeddial_desc_trader"
-				clicksound = interface
+				clicksound = "interface"
 				effect = "speeddial_button_contact_trader_mmg_effect"
 			}
 			##########
@@ -753,7 +683,7 @@ guiTypes = {
 				position = { x = 0 y = 47 }
 				pdx_tooltip = "speeddial_title_artist"
 				pdx_tooltip_delayed = "speeddial_desc_artist"
-				clicksound = interface
+				clicksound = "interface"
 				effect = "speeddial_button_artist_effect"
 			}
 			###########
@@ -765,7 +695,7 @@ guiTypes = {
 				position = { x = 0 y = 81 }
 				pdx_tooltip = "speeddial_title_curator"
 				pdx_tooltip_delayed = "speeddial_desc_curator"
-				clicksound = interface
+				clicksound = "interface"
 				effect = "speeddial_button_curator_effect"
 			}
 			##############
@@ -777,7 +707,7 @@ guiTypes = {
 				position = { x = 0 y = 115 }
 				pdx_tooltip = "speeddial_title_caravaneer"
 				pdx_tooltip_delayed = "speeddial_desc_caravaneer"
-				clicksound = interface
+				clicksound = "interface"
 				effect = "speeddial_button_caravaneer_effect"
 			}
 			############
@@ -789,7 +719,7 @@ guiTypes = {
 				position = { x = 0 y = 149 }
 				pdx_tooltip = "speeddial_title_trader"
 				pdx_tooltip_delayed = "speeddial_desc_trader"
-				clicksound = interface
+				clicksound = "interface"
 				effect = "speeddial_button_marauder_effect"
 			}
 			effectButtonType = {
@@ -798,7 +728,7 @@ guiTypes = {
 				position = { x = 32 y = 151 }
 				pdx_tooltip = "speeddial_title_extend_marauder"
 				pdx_tooltip_delayed = "speeddial_desc_extend_marauder"
-				clicksound = interface
+				clicksound = "interface"
 				effect = "speeddial_button_extend_marauder_effect"
 			}
 			effectButtonType = {
@@ -807,7 +737,7 @@ guiTypes = {
 				position = { x = 32 y = 151 }
 				pdx_tooltip = "speeddial_title_retract_marauder"
 				pdx_tooltip_delayed = "speeddial_desc_retract_marauder"
-				clicksound = interface
+				clicksound = "interface"
 				effect = "speeddial_button_retract_marauder_effect"
 			}
 			effectButtonType = {
@@ -816,7 +746,7 @@ guiTypes = {
 				position = { x = 59 y = 160 }
 				pdx_tooltip = "speeddial_title_sdbg"
 				pdx_tooltip_delayed = "speeddial_desc_sdbg"
-				clicksound = interface
+				clicksound = "interface"
 				effect = "speeddial_button_extend_marauder_effect_bg"
 			}
 			effectButtonType = {
@@ -825,7 +755,7 @@ guiTypes = {
 				position = { x = 48 y = 149 }
 				pdx_tooltip = "speeddial_title_trader"
 				pdx_tooltip_delayed = "speeddial_desc_trader"
-				clicksound = interface
+				clicksound = "interface"
 				effect = "speeddial_button_contact_m1_effect"
 			}
 			effectButtonType = {
@@ -834,7 +764,7 @@ guiTypes = {
 				position = { x = 48 y = 180 }
 				pdx_tooltip = "speeddial_title_trader"
 				pdx_tooltip_delayed = "speeddial_desc_trader"
-				clicksound = interface
+				clicksound = "interface"
 				effect = "speeddial_button_contact_m2_effect"
 			}
 			effectButtonType = {
@@ -843,7 +773,7 @@ guiTypes = {
 				position = { x = 48 y = 211 }
 				pdx_tooltip = "speeddial_title_trader"
 				pdx_tooltip_delayed = "speeddial_desc_trader"
-				clicksound = interface
+				clicksound = "interface"
 				effect = "speeddial_button_contact_m3_effect"
 			}
 			############
@@ -855,7 +785,7 @@ guiTypes = {
 				position = { x = 0 y = 183 }
 				pdx_tooltip = "speeddial_title_salvager"
 				pdx_tooltip_delayed = "speeddial_desc_salvager"
-				clicksound = interface
+				clicksound = "interface"
 				effect = "speeddial_button_salvager_effect"
 			}
 			################
@@ -867,7 +797,7 @@ guiTypes = {
 				position = { x = 0 y = 217 }
 				pdx_tooltip = "speeddial_title_shroudwalker"
 				pdx_tooltip_delayed = "speeddial_desc_shroudwalker"
-				clicksound = interface
+				clicksound = "interface"
 				effect = "speeddial_button_shroudwalker_effect"
 			}
 			##########
@@ -879,7 +809,7 @@ guiTypes = {
 				position = { x = 0 y = 251 }
 				pdx_tooltip = "speeddial_title_shroud"
 				pdx_tooltip_delayed = "speeddial_desc_shroud"
-				clicksound = interface
+				clicksound = "interface"
 				effect = "speeddial_button_shroud_effect"
 			}
 			########
@@ -891,7 +821,7 @@ guiTypes = {
 				position = { x = 0 y = 285 }
 				pdx_tooltip = "speeddial_title_merc"
 				pdx_tooltip_delayed = "speeddial_desc_merc"
-				clicksound = interface
+				clicksound = "interface"
 				effect = "speeddial_button_merc_effect"
 			}
 			effectButtonType = {
@@ -900,7 +830,7 @@ guiTypes = {
 				position = { x = 0 y = 319 }
 				pdx_tooltip = "speeddial_title_hfe"
 				pdx_tooltip_delayed = "speeddial_desc_hfe"
-				clicksound = interface
+				clicksound = "interface"
 				effect = "speeddial_button_hfe_pirates_effect"
 			}
 			effectButtonType = {
@@ -909,7 +839,7 @@ guiTypes = {
 				position = { x = 0 y = 353 }
 				pdx_tooltip = "speeddial_title_hfe"
 				pdx_tooltip_delayed = "speeddial_desc_hfe"
-				clicksound = interface
+				clicksound = "interface"
 				effect = "speeddial_button_hfe_station_effect"
 			}
 			effectButtonType = {
@@ -918,7 +848,7 @@ guiTypes = {
 				position = { x = 0 y = 387 }
 				pdx_tooltip = "speeddial_title_hfe"
 				pdx_tooltip_delayed = "speeddial_desc_hfe"
-				clicksound = interface
+				clicksound = "interface"
 				effect = "speeddial_button_hfe_deepvoid_effect"
 			}
 			effectButtonType = {
@@ -927,7 +857,7 @@ guiTypes = {
 				position = { x = 0 y = 421 }
 				pdx_tooltip = "speeddial_title_ne"
 				pdx_tooltip_delayed = "speeddial_desc_ne"
-				clicksound = interface
+				clicksound = "interface"
 				effect = "speeddial_button_nehive_effect"
 			}
 			effectButtonType = {
@@ -936,7 +866,7 @@ guiTypes = {
 				position = { x = 0 y = 455 }
 				pdx_tooltip = "speeddial_title_ne"
 				pdx_tooltip_delayed = "speeddial_desc_ne"
-				clicksound = interface
+				clicksound = "interface"
 				effect = "speeddial_button_nemachine_effect"
 			}
 			effectButtonType = {
@@ -945,7 +875,7 @@ guiTypes = {
 				position = { x = 0 y = 489 }
 				pdx_tooltip = "speeddial_title_ne"
 				pdx_tooltip_delayed = "speeddial_desc_ne"
-				clicksound = interface
+				clicksound = "interface"
 				effect = "speeddial_button_neshroud_effect"
 			}
 			effectButtonType = {
@@ -954,7 +884,7 @@ guiTypes = {
 				position = { x = 0 y = 523 }
 				pdx_tooltip = "speeddial_title_ne"
 				pdx_tooltip_delayed = "speeddial_desc_ne"
-				clicksound = interface
+				clicksound = "interface"
 				effect = "speeddial_button_xenonews_effect"
 			}
 		}
@@ -969,7 +899,7 @@ guiTypes = {
 			name = "background"
 			quadTextureSprite = "GFX_control_group_window_bg"
 			position = { x = 0 y = 10 }
-			clicksound = interface
+			clicksound = "interface"
 		}
 		iconType = {
 			name = "progress"
@@ -1014,7 +944,7 @@ guiTypes = {
 		size = { width = 32 height = 32 }
 		buttonType = {
 			name = "button"
-			quadTextureSprite = "GFX_button_29_animated"
+			quadTextureSprite = "GFX_button_29_animated_dark"
 			position = { x = -12 y = -12 }
 			clicksound = "ui_click_map_mode"
 		}
