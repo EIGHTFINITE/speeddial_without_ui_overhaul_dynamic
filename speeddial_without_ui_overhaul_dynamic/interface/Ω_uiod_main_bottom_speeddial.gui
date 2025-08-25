@@ -42,7 +42,7 @@ guiTypes = {
 				position = { x = 0 y = 0 }
 				pdx_tooltip = "speeddial_title_thin"
 				pdx_tooltip_delayed = "speeddial_desc_thin"
-				clicksound = interface
+				clicksound = "interface"
 				effect = "speeddial_button_open_options_effect"
 			}
 			###########
@@ -54,7 +54,7 @@ guiTypes = {
 				position = { x = 0 y = 13 }
 				pdx_tooltip = "speeddial_title_trader"
 				pdx_tooltip_delayed = "speeddial_desc_trader"
-				clicksound = interface
+				clicksound = "interface"
 				effect = "speeddial_button_trader_effect"
 			}
 			effectButtonType = {
@@ -63,7 +63,7 @@ guiTypes = {
 				position = { x = 32 y = 15 }
 				pdx_tooltip = "speeddial_title_extend_trader"
 				pdx_tooltip_delayed = "speeddial_desc_extend_trader"
-				clicksound = interface
+				clicksound = "interface"
 				effect = "speeddial_button_extend_trader_effect"
 			}
 			effectButtonType = {
@@ -72,7 +72,7 @@ guiTypes = {
 				position = { x = 32 y = 15 }
 				pdx_tooltip = "speeddial_title_retract_trader"
 				pdx_tooltip_delayed = "speeddial_desc_retract_trader"
-				clicksound = interface
+				clicksound = "interface"
 				effect = "speeddial_button_retract_trader_effect"
 			}
 			effectButtonType = {
@@ -81,7 +81,7 @@ guiTypes = {
 				position = { x = 59 y = 24 }
 				pdx_tooltip = "speeddial_title_sdbg"
 				pdx_tooltip_delayed = "speeddial_desc_sdbg"
-				clicksound = interface
+				clicksound = "interface"
 				effect = "speeddial_button_extend_trader_effect_bg"
 			}
 			effectButtonType = {
@@ -90,7 +90,7 @@ guiTypes = {
 				position = { x = 48 y = 13 }
 				pdx_tooltip = "speeddial_title_trader"
 				pdx_tooltip_delayed = "speeddial_desc_trader"
-				clicksound = interface
+				clicksound = "interface"
 				effect = "speeddial_button_contact_trader_xc_effect"
 			}
 			effectButtonType = {
@@ -99,7 +99,7 @@ guiTypes = {
 				position = { x = 48 y = 44 }
 				pdx_tooltip = "speeddial_title_trader"
 				pdx_tooltip_delayed = "speeddial_desc_trader"
-				clicksound = interface
+				clicksound = "interface"
 				effect = "speeddial_button_contact_trader_rce_effect"
 			}
 			effectButtonType = {
@@ -108,7 +108,7 @@ guiTypes = {
 				position = { x = 48 y = 75 }
 				pdx_tooltip = "speeddial_title_trader"
 				pdx_tooltip_delayed = "speeddial_desc_trader"
-				clicksound = interface
+				clicksound = "interface"
 				effect = "speeddial_button_contact_trader_mmg_effect"
 			}
 			##########
@@ -120,7 +120,7 @@ guiTypes = {
 				position = { x = 0 y = 47 }
 				pdx_tooltip = "speeddial_title_artist"
 				pdx_tooltip_delayed = "speeddial_desc_artist"
-				clicksound = interface
+				clicksound = "interface"
 				effect = "speeddial_button_artist_effect"
 			}
 			###########
@@ -132,7 +132,7 @@ guiTypes = {
 				position = { x = 0 y = 81 }
 				pdx_tooltip = "speeddial_title_curator"
 				pdx_tooltip_delayed = "speeddial_desc_curator"
-				clicksound = interface
+				clicksound = "interface"
 				effect = "speeddial_button_curator_effect"
 			}
 			##############
@@ -144,7 +144,7 @@ guiTypes = {
 				position = { x = 0 y = 115 }
 				pdx_tooltip = "speeddial_title_caravaneer"
 				pdx_tooltip_delayed = "speeddial_desc_caravaneer"
-				clicksound = interface
+				clicksound = "interface"
 				effect = "speeddial_button_caravaneer_effect"
 			}
 			############
@@ -156,7 +156,7 @@ guiTypes = {
 				position = { x = 0 y = 149 }
 				pdx_tooltip = "speeddial_title_trader"
 				pdx_tooltip_delayed = "speeddial_desc_trader"
-				clicksound = interface
+				clicksound = "interface"
 				effect = "speeddial_button_marauder_effect"
 			}
 			effectButtonType = {
@@ -165,7 +165,7 @@ guiTypes = {
 				position = { x = 32 y = 151 }
 				pdx_tooltip = "speeddial_title_extend_marauder"
 				pdx_tooltip_delayed = "speeddial_desc_extend_marauder"
-				clicksound = interface
+				clicksound = "interface"
 				effect = "speeddial_button_extend_marauder_effect"
 			}
 			effectButtonType = {
@@ -174,7 +174,7 @@ guiTypes = {
 				position = { x = 32 y = 151 }
 				pdx_tooltip = "speeddial_title_retract_marauder"
 				pdx_tooltip_delayed = "speeddial_desc_retract_marauder"
-				clicksound = interface
+				clicksound = "interface"
 				effect = "speeddial_button_retract_marauder_effect"
 			}
 			effectButtonType = {
@@ -183,7 +183,7 @@ guiTypes = {
 				position = { x = 59 y = 160 }
 				pdx_tooltip = "speeddial_title_sdbg"
 				pdx_tooltip_delayed = "speeddial_desc_sdbg"
-				clicksound = interface
+				clicksound = "interface"
 				effect = "speeddial_button_extend_marauder_effect_bg"
 			}
 			effectButtonType = {
@@ -192,7 +192,7 @@ guiTypes = {
 				position = { x = 48 y = 149 }
 				pdx_tooltip = "speeddial_title_trader"
 				pdx_tooltip_delayed = "speeddial_desc_trader"
-				clicksound = interface
+				clicksound = "interface"
 				effect = "speeddial_button_contact_m1_effect"
 			}
 			effectButtonType = {
@@ -201,7 +201,7 @@ guiTypes = {
 				position = { x = 48 y = 180 }
 				pdx_tooltip = "speeddial_title_trader"
 				pdx_tooltip_delayed = "speeddial_desc_trader"
-				clicksound = interface
+				clicksound = "interface"
 				effect = "speeddial_button_contact_m2_effect"
 			}
 			effectButtonType = {
@@ -210,7 +210,7 @@ guiTypes = {
 				position = { x = 48 y = 211 }
 				pdx_tooltip = "speeddial_title_trader"
 				pdx_tooltip_delayed = "speeddial_desc_trader"
-				clicksound = interface
+				clicksound = "interface"
 				effect = "speeddial_button_contact_m3_effect"
 			}
 			############
@@ -222,7 +222,7 @@ guiTypes = {
 				position = { x = 0 y = 183 }
 				pdx_tooltip = "speeddial_title_salvager"
 				pdx_tooltip_delayed = "speeddial_desc_salvager"
-				clicksound = interface
+				clicksound = "interface"
 				effect = "speeddial_button_salvager_effect"
 			}
 			################
@@ -234,7 +234,7 @@ guiTypes = {
 				position = { x = 0 y = 217 }
 				pdx_tooltip = "speeddial_title_shroudwalker"
 				pdx_tooltip_delayed = "speeddial_desc_shroudwalker"
-				clicksound = interface
+				clicksound = "interface"
 				effect = "speeddial_button_shroudwalker_effect"
 			}
 			##########
@@ -246,7 +246,7 @@ guiTypes = {
 				position = { x = 0 y = 251 }
 				pdx_tooltip = "speeddial_title_shroud"
 				pdx_tooltip_delayed = "speeddial_desc_shroud"
-				clicksound = interface
+				clicksound = "interface"
 				effect = "speeddial_button_shroud_effect"
 			}
 			########
@@ -258,7 +258,7 @@ guiTypes = {
 				position = { x = 0 y = 285 }
 				pdx_tooltip = "speeddial_title_merc"
 				pdx_tooltip_delayed = "speeddial_desc_merc"
-				clicksound = interface
+				clicksound = "interface"
 				effect = "speeddial_button_merc_effect"
 			}
 			effectButtonType = {
@@ -267,7 +267,7 @@ guiTypes = {
 				position = { x = 0 y = 319 }
 				pdx_tooltip = "speeddial_title_hfe"
 				pdx_tooltip_delayed = "speeddial_desc_hfe"
-				clicksound = interface
+				clicksound = "interface"
 				effect = "speeddial_button_hfe_pirates_effect"
 			}
 			effectButtonType = {
@@ -276,7 +276,7 @@ guiTypes = {
 				position = { x = 0 y = 353 }
 				pdx_tooltip = "speeddial_title_hfe"
 				pdx_tooltip_delayed = "speeddial_desc_hfe"
-				clicksound = interface
+				clicksound = "interface"
 				effect = "speeddial_button_hfe_station_effect"
 			}
 			effectButtonType = {
@@ -285,7 +285,7 @@ guiTypes = {
 				position = { x = 0 y = 387 }
 				pdx_tooltip = "speeddial_title_hfe"
 				pdx_tooltip_delayed = "speeddial_desc_hfe"
-				clicksound = interface
+				clicksound = "interface"
 				effect = "speeddial_button_hfe_deepvoid_effect"
 			}
 			effectButtonType = {
@@ -294,7 +294,7 @@ guiTypes = {
 				position = { x = 0 y = 421 }
 				pdx_tooltip = "speeddial_title_ne"
 				pdx_tooltip_delayed = "speeddial_desc_ne"
-				clicksound = interface
+				clicksound = "interface"
 				effect = "speeddial_button_nehive_effect"
 			}
 			effectButtonType = {
@@ -303,7 +303,7 @@ guiTypes = {
 				position = { x = 0 y = 455 }
 				pdx_tooltip = "speeddial_title_ne"
 				pdx_tooltip_delayed = "speeddial_desc_ne"
-				clicksound = interface
+				clicksound = "interface"
 				effect = "speeddial_button_nemachine_effect"
 			}
 			effectButtonType = {
@@ -312,7 +312,7 @@ guiTypes = {
 				position = { x = 0 y = 489 }
 				pdx_tooltip = "speeddial_title_ne"
 				pdx_tooltip_delayed = "speeddial_desc_ne"
-				clicksound = interface
+				clicksound = "interface"
 				effect = "speeddial_button_neshroud_effect"
 			}
 			effectButtonType = {
@@ -321,7 +321,7 @@ guiTypes = {
 				position = { x = 0 y = 523 }
 				pdx_tooltip = "speeddial_title_ne"
 				pdx_tooltip_delayed = "speeddial_desc_ne"
-				clicksound = interface
+				clicksound = "interface"
 				effect = "speeddial_button_xenonews_effect"
 			}
 		}
