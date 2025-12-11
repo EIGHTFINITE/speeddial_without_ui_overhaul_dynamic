@@ -11,9 +11,17 @@ guiTypes = {
 		## Control Groups
 		overlappingElementsBoxType = {
 			name = "control_groups"
-			position = { x = 4 y = -46 }
-			size = { x = 700 y = 13 }
-			spacing = 2
+			position = { x = 2 y = -34 }
+			size = { x = 395 y = 32 }
+			if_scaled_resolution = {
+				min_width = 1650
+				size = { x = 445 y = 32 }
+			}
+			if_scaled_resolution = {
+				min_width = 1920
+				size = { x = 606 y = 32 }
+			}
+			spacing = 4
 			orientation = lower_left
 			format = left
 		}
@@ -147,6 +155,12 @@ guiTypes = {
 				name = "environmental_effects_icon"
 				spriteType = "GFX_system_hazards_icon"
 				position = { x = 406 y = 35 }
+				centerPosition = yes
+			}
+			iconType = {
+				name = "psionic_aura_icon"
+				spriteType = "GFX_system_psionic_aura_icon"
+				position = { x = 370 y = 35 }
 				centerPosition = yes
 			}
 			buttonType = {
@@ -604,19 +618,18 @@ guiTypes = {
 				quadTextureSprite = "GFX_button_speeddial_thin_animated"
 				position = { x = 0 y = 0 }
 				pdx_tooltip = "speeddial_title_thin"
-				pdx_tooltip_delayed = "speeddial_desc_thin"
 				clicksound = "interface"
 				effect = "speeddial_button_open_options_effect"
 			}
 			###########
 			# traders #
 			###########
+			@margin_top = 13
 			effectButtonType = {
 				name = "speeddial_button_trader"
 				quadTextureSprite = "GFX_button_speeddial_trader_animated"
-				position = { x = 0 y = 13 }
+				position = { x = 0 y = @margin_top }
 				pdx_tooltip = "speeddial_title_trader"
-				pdx_tooltip_delayed = "speeddial_desc_trader"
 				clicksound = "interface"
 				effect = "speeddial_button_trader_effect"
 			}
@@ -625,7 +638,6 @@ guiTypes = {
 				quadTextureSprite = "GFX_button_speeddial_extend_animated"
 				position = { x = 32 y = 15 }
 				pdx_tooltip = "speeddial_title_extend_trader"
-				pdx_tooltip_delayed = "speeddial_desc_extend_trader"
 				clicksound = "interface"
 				effect = "speeddial_button_extend_trader_effect"
 			}
@@ -634,7 +646,6 @@ guiTypes = {
 				quadTextureSprite = "GFX_button_speeddial_retract_animated"
 				position = { x = 32 y = 15 }
 				pdx_tooltip = "speeddial_title_retract_trader"
-				pdx_tooltip_delayed = "speeddial_desc_retract_trader"
 				clicksound = "interface"
 				effect = "speeddial_button_retract_trader_effect"
 			}
@@ -643,16 +654,14 @@ guiTypes = {
 				quadTextureSprite = "GFX_button_speeddial_extend_bg"
 				position = { x = 59 y = 24 }
 				pdx_tooltip = "speeddial_title_sdbg"
-				pdx_tooltip_delayed = "speeddial_desc_sdbg"
 				clicksound = "interface"
 				effect = "speeddial_button_extend_trader_effect_bg"
 			}
 			effectButtonType = {
 				name = "speeddial_button_trader_xc"
 				quadTextureSprite = "GFX_button_speeddial_trader_xc_animated"
-				position = { x = 48 y = 13 }
+				position = { x = 48 y = @margin_top }
 				pdx_tooltip = "speeddial_title_trader"
-				pdx_tooltip_delayed = "speeddial_desc_trader"
 				clicksound = "interface"
 				effect = "speeddial_button_contact_trader_xc_effect"
 			}
@@ -661,7 +670,6 @@ guiTypes = {
 				quadTextureSprite = "GFX_button_speeddial_trader_rce_animated"
 				position = { x = 48 y = 44 }
 				pdx_tooltip = "speeddial_title_trader"
-				pdx_tooltip_delayed = "speeddial_desc_trader"
 				clicksound = "interface"
 				effect = "speeddial_button_contact_trader_rce_effect"
 			}
@@ -670,7 +678,6 @@ guiTypes = {
 				quadTextureSprite = "GFX_button_speeddial_trader_mmg_animated"
 				position = { x = 48 y = 75 }
 				pdx_tooltip = "speeddial_title_trader"
-				pdx_tooltip_delayed = "speeddial_desc_trader"
 				clicksound = "interface"
 				effect = "speeddial_button_contact_trader_mmg_effect"
 			}
@@ -680,9 +687,8 @@ guiTypes = {
 			effectButtonType = {
 				name = "speeddial_button_artist"
 				quadTextureSprite = "GFX_button_speeddial_artist_animated"
-				position = { x = 0 y = 47 }
+				position = { x = 0 y = @[ margin_top + 34 * 1 ] } # 47 }
 				pdx_tooltip = "speeddial_title_artist"
-				pdx_tooltip_delayed = "speeddial_desc_artist"
 				clicksound = "interface"
 				effect = "speeddial_button_artist_effect"
 			}
@@ -692,9 +698,8 @@ guiTypes = {
 			effectButtonType = {
 				name = "speeddial_button_curator"
 				quadTextureSprite = "GFX_button_speeddial_curator_animated"
-				position = { x = 0 y = 81 }
+				position = { x = 0 y = @[ margin_top + 34 * 2 ] }
 				pdx_tooltip = "speeddial_title_curator"
-				pdx_tooltip_delayed = "speeddial_desc_curator"
 				clicksound = "interface"
 				effect = "speeddial_button_curator_effect"
 			}
@@ -704,9 +709,8 @@ guiTypes = {
 			effectButtonType = {
 				name = "speeddial_button_caravaneer"
 				quadTextureSprite = "GFX_button_speeddial_caravaneer_animated"
-				position = { x = 0 y = 115 }
+				position = { x = 0 y = @[ margin_top + 34 * 3 ] }
 				pdx_tooltip = "speeddial_title_caravaneer"
-				pdx_tooltip_delayed = "speeddial_desc_caravaneer"
 				clicksound = "interface"
 				effect = "speeddial_button_caravaneer_effect"
 			}
@@ -716,9 +720,8 @@ guiTypes = {
 			effectButtonType = {
 				name = "speeddial_button_marauder"
 				quadTextureSprite = "GFX_button_speeddial_marauder_animated"
-				position = { x = 0 y = 149 }
+				position = { x = 0 y = @[ margin_top + 34 * 4 ] }
 				pdx_tooltip = "speeddial_title_trader"
-				pdx_tooltip_delayed = "speeddial_desc_trader"
 				clicksound = "interface"
 				effect = "speeddial_button_marauder_effect"
 			}
@@ -727,7 +730,6 @@ guiTypes = {
 				quadTextureSprite = "GFX_button_speeddial_extend_animated"
 				position = { x = 32 y = 151 }
 				pdx_tooltip = "speeddial_title_extend_marauder"
-				pdx_tooltip_delayed = "speeddial_desc_extend_marauder"
 				clicksound = "interface"
 				effect = "speeddial_button_extend_marauder_effect"
 			}
@@ -736,7 +738,6 @@ guiTypes = {
 				quadTextureSprite = "GFX_button_speeddial_retract_animated"
 				position = { x = 32 y = 151 }
 				pdx_tooltip = "speeddial_title_retract_marauder"
-				pdx_tooltip_delayed = "speeddial_desc_retract_marauder"
 				clicksound = "interface"
 				effect = "speeddial_button_retract_marauder_effect"
 			}
@@ -745,7 +746,6 @@ guiTypes = {
 				quadTextureSprite = "GFX_button_speeddial_extend_bg"
 				position = { x = 59 y = 160 }
 				pdx_tooltip = "speeddial_title_sdbg"
-				pdx_tooltip_delayed = "speeddial_desc_sdbg"
 				clicksound = "interface"
 				effect = "speeddial_button_extend_marauder_effect_bg"
 			}
@@ -754,7 +754,6 @@ guiTypes = {
 				quadTextureSprite = "GFX_button_speeddial_marauder_1_animated"
 				position = { x = 48 y = 149 }
 				pdx_tooltip = "speeddial_title_trader"
-				pdx_tooltip_delayed = "speeddial_desc_trader"
 				clicksound = "interface"
 				effect = "speeddial_button_contact_m1_effect"
 			}
@@ -763,7 +762,6 @@ guiTypes = {
 				quadTextureSprite = "GFX_button_speeddial_marauder_2_animated"
 				position = { x = 48 y = 180 }
 				pdx_tooltip = "speeddial_title_trader"
-				pdx_tooltip_delayed = "speeddial_desc_trader"
 				clicksound = "interface"
 				effect = "speeddial_button_contact_m2_effect"
 			}
@@ -772,7 +770,6 @@ guiTypes = {
 				quadTextureSprite = "GFX_button_speeddial_marauder_3_animated"
 				position = { x = 48 y = 211 }
 				pdx_tooltip = "speeddial_title_trader"
-				pdx_tooltip_delayed = "speeddial_desc_trader"
 				clicksound = "interface"
 				effect = "speeddial_button_contact_m3_effect"
 			}
@@ -782,9 +779,8 @@ guiTypes = {
 			effectButtonType = {
 				name = "speeddial_button_salvager"
 				quadTextureSprite = "GFX_button_speeddial_salvager_animated"
-				position = { x = 0 y = 183 }
+				position = { x = 0 y = @[ margin_top + 34 * 5 ] }
 				pdx_tooltip = "speeddial_title_salvager"
-				pdx_tooltip_delayed = "speeddial_desc_salvager"
 				clicksound = "interface"
 				effect = "speeddial_button_salvager_effect"
 			}
@@ -794,11 +790,21 @@ guiTypes = {
 			effectButtonType = {
 				name = "speeddial_button_shroudwalker"
 				quadTextureSprite = "GFX_button_speeddial_shroudwalker_animated"
-				position = { x = 0 y = 217 }
+				position = { x = 0 y = @[ margin_top + 34 * 6 ] }
 				pdx_tooltip = "speeddial_title_shroudwalker"
-				pdx_tooltip_delayed = "speeddial_desc_shroudwalker"
 				clicksound = "interface"
 				effect = "speeddial_button_shroudwalker_effect"
+			}
+			##############
+			# mindwarden #
+			##############
+			effectButtonType = {
+				name = "speeddial_button_mindwarden"
+				quadTextureSprite = "GFX_button_speeddial_mindwarden_animated"
+				position = { x = 0 y = @[ margin_top + 34 * 7 ] }
+				pdx_tooltip = "speeddial_title_mindwarden"
+				clicksound = "interface"
+				effect = "speeddial_button_mindwarden_effect"
 			}
 			##########
 			# shroud #
@@ -806,86 +812,134 @@ guiTypes = {
 			effectButtonType = {
 				name = "speeddial_button_shroud"
 				quadTextureSprite = "GFX_button_speeddial_shroud_animated"
-				position = { x = 0 y = 251 }
+				position = { x = 0 y = @[ margin_top + 34 * 8 ] }
 				pdx_tooltip = "speeddial_title_shroud"
-				pdx_tooltip_delayed = "speeddial_desc_shroud"
 				clicksound = "interface"
 				effect = "speeddial_button_shroud_effect"
+			}
+			#####################
+			# mercenary enclave #
+			#####################
+			effectButtonType = {
+				name = "speeddial_button_mercenary_enclave"
+				quadTextureSprite = "GFX_button_speeddial_mercenary_enclave_animated"
+				position = { x = 0 y = @[ margin_top + 34 * 9 ] }
+				pdx_tooltip = "speeddial_title_mercenary_enclave"
+				clicksound = "interface"
+				effect = "speeddial_button_mercenary_enclave_effect"
 			}
 			########
 			# mods #
 			########
+			# New Enclaves
 			effectButtonType = {
-				name = "speeddial_button_merc"
-				quadTextureSprite = "GFX_button_speeddial_merc_animated"
-				position = { x = 0 y = 285 }
-				pdx_tooltip = "speeddial_title_merc"
-				pdx_tooltip_delayed = "speeddial_desc_merc"
+				name = "speeddial_button_extend_ne"
+				quadTextureSprite = "GFX_button_speeddial_extend_large_animated"
+				position = { x = 0 y = @[ margin_top + 34 * 10 ] }
+				buttonFont = "font_text_14"
+				buttonText = "speeddial_button_ne"
+				text_offset = { x = -9 y = 0 }
+				pdx_tooltip = "speeddial_button_ne_extend_tooltip"
 				clicksound = "interface"
-				effect = "speeddial_button_merc_effect"
+				effect = "speeddial_button_extend_ne_effect"
 			}
 			effectButtonType = {
-				name = "speeddial_button_hfe_pirates"
-				quadTextureSprite = "GFX_button_speeddial_pirate_animated"
-				position = { x = 0 y = 319 }
-				pdx_tooltip = "speeddial_title_hfe"
-				pdx_tooltip_delayed = "speeddial_desc_hfe"
+				name = "speeddial_button_retract_ne"
+				quadTextureSprite = "GFX_button_speeddial_retract_large_animated"
+				position = { x = 0 y = @[ margin_top + 34 * 10 ] }
+				buttonFont = "font_text_14"
+				buttonText = "speeddial_button_ne"
+				text_offset = { x = -9 y = 0 }
+				pdx_tooltip = "speeddial_button_ne_retract_tooltip"
 				clicksound = "interface"
-				effect = "speeddial_button_hfe_pirates_effect"
-			}
-			effectButtonType = {
-				name = "speeddial_button_hfe_station"
-				quadTextureSprite = "GFX_button_speeddial_station_animated"
-				position = { x = 0 y = 353 }
-				pdx_tooltip = "speeddial_title_hfe"
-				pdx_tooltip_delayed = "speeddial_desc_hfe"
-				clicksound = "interface"
-				effect = "speeddial_button_hfe_station_effect"
-			}
-			effectButtonType = {
-				name = "speeddial_button_hfe_deepvoid"
-				quadTextureSprite = "GFX_button_speeddial_spaceport_docking_animated"
-				position = { x = 0 y = 387 }
-				pdx_tooltip = "speeddial_title_hfe"
-				pdx_tooltip_delayed = "speeddial_desc_hfe"
-				clicksound = "interface"
-				effect = "speeddial_button_hfe_deepvoid_effect"
+				effect = "speeddial_button_retract_ne_effect"
 			}
 			effectButtonType = {
 				name = "speeddial_button_ne_hiv"
 				quadTextureSprite = "GFX_button_speeddial_ne_hiv_animated"
-				position = { x = 0 y = 421 }
+				position = { x = @[ 14 + 34 ] y = @[ margin_top + 34 * 10 ] }
 				pdx_tooltip = "speeddial_title_ne"
-				pdx_tooltip_delayed = "speeddial_desc_ne"
 				clicksound = "interface"
 				effect = "speeddial_button_nehive_effect"
 			}
 			effectButtonType = {
 				name = "speeddial_button_ne_mac"
 				quadTextureSprite = "GFX_button_speeddial_ne_mac_animated"
-				position = { x = 0 y = 455 }
+				position = { x = @[ 14 + 34 * 2 ] y = @[ margin_top + 34 * 10 ] }
 				pdx_tooltip = "speeddial_title_ne"
-				pdx_tooltip_delayed = "speeddial_desc_ne"
 				clicksound = "interface"
 				effect = "speeddial_button_nemachine_effect"
 			}
 			effectButtonType = {
 				name = "speeddial_button_ne_shr"
 				quadTextureSprite = "GFX_button_speeddial_ne_shr_animated"
-				position = { x = 0 y = 489 }
+				position = { x = @[ 14 + 34 * 3 ] y = @[ margin_top + 34 * 10 ] }
 				pdx_tooltip = "speeddial_title_ne"
-				pdx_tooltip_delayed = "speeddial_desc_ne"
 				clicksound = "interface"
 				effect = "speeddial_button_neshroud_effect"
 			}
 			effectButtonType = {
-				name = "speeddial_button_xno"
-				quadTextureSprite = "GFX_button_speeddial_xno_animated"
-				position = { x = 0 y = 523 }
+				name = "speeddial_button_ne_drg"
+				quadTextureSprite = "GFX_button_speeddial_ne_drg_animated"
+				position = { x = @[ 14 + 34 * 4 ] y = @[ margin_top + 34 * 10 ] }
 				pdx_tooltip = "speeddial_title_ne"
-				pdx_tooltip_delayed = "speeddial_desc_ne"
 				clicksound = "interface"
-				effect = "speeddial_button_xenonews_effect"
+				effect = "speeddial_button_ne_drg_effect"
+			}
+			# More Enclaves
+			effectButtonType = {
+				name = "speeddial_button_extend_me"
+				quadTextureSprite = "GFX_button_speeddial_extend_large_animated"
+				position = { x = 0 y = @[ margin_top + 34 * 11 ] }
+				buttonFont = "font_text_14"
+				buttonText = "speeddial_button_me"
+				text_offset = { x = -9 y = 0 }
+				pdx_tooltip = "speeddial_button_me_extend_tooltip"
+				clicksound = "interface"
+				effect = "speeddial_button_extend_me_effect"
+			}
+			effectButtonType = {
+				name = "speeddial_button_retract_me"
+				quadTextureSprite = "GFX_button_speeddial_retract_large_animated"
+				position = { x = 0 y = @[ margin_top + 34 * 11 ] }
+				buttonFont = "font_text_14"
+				buttonText = "speeddial_button_me"
+				text_offset = { x = -9 y = 0 }
+				pdx_tooltip = "speeddial_button_ne_retract_tooltip"
+				clicksound = "interface"
+				effect = "speeddial_button_retract_me_effect"
+			}
+			effectButtonType = {
+				name = "speeddial_button_me_garden"
+				quadTextureSprite = "GFX_button_speeddial_me_garden_animated"
+				position = { x = @[ 14 + 34 ] y = @[ margin_top + 34 * 11 ] }
+				pdx_tooltip = "speeddial_title_me"
+				clicksound = "interface"
+				effect = "speeddial_button_me_garden_effect"
+			}
+			effectButtonType = {
+				name = "speeddial_button_me_museum"
+				quadTextureSprite = "GFX_button_speeddial_me_museum_animated"
+				position = { x = @[ 14 + 34 * 2 ] y = @[ margin_top + 34 * 11 ] }
+				pdx_tooltip = "speeddial_title_ne"
+				clicksound = "interface"
+				effect = "speeddial_button_me_museum_effect"
+			}
+			effectButtonType = {
+				name = "speeddial_button_me_lawyer"
+				quadTextureSprite = "GFX_button_speeddial_me_lawyer_animated"
+				position = { x = @[ 14 + 34 * 3 ] y = @[ margin_top + 34 * 11 ] }
+				pdx_tooltip = "speeddial_title_ne"
+				clicksound = "interface"
+				effect = "speeddial_button_me_lawyer_effect"
+			}
+			effectButtonType = {
+				name = "speeddial_button_me_exo"
+				quadTextureSprite = "GFX_button_speeddial_me_exo_animated"
+				position = { x = @[ 14 + 34 * 4 ] y = @[ margin_top + 34 * 11 ] }
+				pdx_tooltip = "speeddial_title_ne"
+				clicksound = "interface"
+				effect = "speeddial_button_me_exo_effect"
 			}
 		}
 		#######################
@@ -894,48 +948,61 @@ guiTypes = {
 	}
 	containerWindowType = {
 		name = "control_group_window"
-		size = { width = 62 height = 47 }
+		size = { width = 57 height = 32 }
+		clipping = no
+		background = {
+			name = "background"
+			spriteType = "GFX_invisible"
+		}
 		buttonType = {
 			name = "background"
 			quadTextureSprite = "GFX_control_group_window_bg"
-			position = { x = 0 y = 10 }
+			position = { x = 0 y = 0 }
 			clicksound = "interface"
 		}
 		iconType = {
 			name = "progress"
 			spriteType = "GFX_control_group_progress"
-			position = { x = 0 y = 1 }
+			position = { x = 0 y = -2 }
+			orientation = center_down
+			centerPosition = yes
 			alwaysTransparent = yes
 		}
 		iconType = {
 			name = "in_combat_flash"
 			spriteType = "GFX_control_group_in_combat_flash"
-			position = { x = -4 y = 3 }
+			position = { x = 0 y = 0 }
+			orientation = center
+			centerPosition = yes
 			alwaysTransparent = yes
 		}
 		iconType = {
 			name = "icon"
 			spriteType = "GFX_control_group_strip"
-			position = { x = 22 y = 15 }
+			position = { x = 0 y = 0 }
+			orientation = center
+			centerPosition = yes
+			scale = 0.83
 			alwaysTransparent = yes
 		}
 		instantTextBoxType = {
 			name = "info"
 			font = "font_text_14"
-			position = { x = 43 y = 25 }
-			maxWidth = 31
+			position = { x = 2 y = -16 }
+			orientation = lower_left
+			maxWidth = 53
 			maxHeight = 16
+			format = right
 			alwaysTransparent = yes
-			format = left
 		}
 		instantTextBoxType = {
 			name = "number"
 			font = "font_text_14"
-			position = { x = 02 y = 18 }
+			position = { x = 2 y = 2 }
 			maxWidth = 19
 			maxHeight = 16
+			format = left
 			alwaysTransparent = yes
-			format = center
 		}
 	}
 	#map mode neighbours
