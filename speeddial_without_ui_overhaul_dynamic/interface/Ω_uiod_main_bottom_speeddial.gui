@@ -839,7 +839,6 @@ guiTypes = {
 				buttonFont = "font_text_14"
 				buttonText = "speeddial_button_ne"
 				text_offset = { x = -9 y = 0 }
-				pdx_tooltip = "speeddial_button_ne_extend_tooltip"
 				clicksound = "interface"
 				effect = "speeddial_button_extend_ne_effect"
 			}
@@ -850,7 +849,6 @@ guiTypes = {
 				buttonFont = "font_text_14"
 				buttonText = "speeddial_button_ne"
 				text_offset = { x = -9 y = 0 }
-				pdx_tooltip = "speeddial_button_ne_retract_tooltip"
 				clicksound = "interface"
 				effect = "speeddial_button_retract_ne_effect"
 			}
@@ -894,7 +892,6 @@ guiTypes = {
 				buttonFont = "font_text_14"
 				buttonText = "speeddial_button_me"
 				text_offset = { x = -9 y = 0 }
-				pdx_tooltip = "speeddial_button_me_extend_tooltip"
 				clicksound = "interface"
 				effect = "speeddial_button_extend_me_effect"
 			}
@@ -905,7 +902,6 @@ guiTypes = {
 				buttonFont = "font_text_14"
 				buttonText = "speeddial_button_me"
 				text_offset = { x = -9 y = 0 }
-				pdx_tooltip = "speeddial_button_ne_retract_tooltip"
 				clicksound = "interface"
 				effect = "speeddial_button_retract_me_effect"
 			}
