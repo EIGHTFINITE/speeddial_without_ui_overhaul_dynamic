@@ -542,9 +542,9 @@ guiTypes = {
 			}
 			iconType = {
 				name = "toggle_mapmode_icon_details"
-				spriteType = "GFX_mapmode"
+				spriteType = "GFX_mapmode_details"
 				position = { x = 4 y = -32 }
-				frame = 9
+				frame = 1
 				alwaysTransparent = yes
 			}
 			### MAP ICONS
