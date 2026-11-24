@@ -5,6 +5,11 @@ guiTypes = {
 		position = { x = 246 y = 0 }
 	}
 
+	positionType = {
+		name = "mapmodes_offset_per_extra_column"
+		position = { x = -35 y = 0 }
+	}
+
 	#Adjusts offset for tooltips for all elements at the bottom of the screen
 	@tt_offset_y = 0
 
@@ -521,6 +526,13 @@ guiTypes = {
 				quadTextureSprite = "GFX_restricted_system_icon"
 				position = { x = -114 y = 43 }
 			}
+
+			containerWindowType = {
+				name = "ideology_window"
+				position = { x = -80 y = 38 }
+				size = { width = 50 height = 50 }
+				clipping = no
+			}
 		}
 
 		### LEAVE GALAXY WINDOW
@@ -680,7 +692,7 @@ guiTypes = {
 			gridBoxType = {
 				name = "map_modes"
 				slotSize = { width = 34 height = 34 }
-				max_slots_horizontal = 4
+				max_slots = { x = 4 y = 2 }
 				format = "LOWER_LEFT"
 				orientation = "LOWER_LEFT"
 			}
@@ -702,7 +714,7 @@ guiTypes = {
 			iconType = {
 				name = "bottombar_details"
 				spriteType = "GFX_bottombar_details"
-				position = { x = 0 y = -5 }
+				position = { x = 0 y = 0 }
 			}
 
 			buttonType = {
@@ -806,82 +818,105 @@ guiTypes = {
 
 			## Filters
 
-			buttonType = {
-				name = "toggle_mapmode_sectors"
-				quadTextureSprite = "GFX_button_29_animated_dark"
-				position = { x = -238 y = -82 }
-				pdx_tooltip_anchor_offset = { x = 0 y = @tt_offset_y }
-				pdx_tooltip_anchor_orientation = lower_left
-				orientation = lower_right
-			}
+			containerWindowType = {
+				name = "map_filters_window"
+				size = { width = 120 height = 36 }
+				position = { x = 70 y = -102 }
+				clipping = no
 
-			iconType = {
-				name = "toggle_mapmode_icon_sectors"
-				spriteType = "GFX_map_mode_sectors"
-				position = { x = -226 y = -70 }
-				orientation = "LOWER_RIGHT"
-				alwaystransparent = yes
-			}
+				buttonType = {
+					name = "toggle_mapmode_ideologies"
+					quadTextureSprite = "GFX_button_29_animated_dark"
+					position = { x = 6 y = 20 }
+					pdx_tooltip_anchor_offset = { x = 0 y = @tt_offset_y }
+					pdx_tooltip_anchor_orientation = lower_left
+					orientation = lower_left
+				}
 
-			buttonType = {
-				name = "toggle_mapmode_hyperlanes"
-				quadTextureSprite = "GFX_button_29_animated_dark"
-				position = { x = -205 y = -82 }
-				pdx_tooltip_anchor_offset = { x = 0 y = @tt_offset_y }
-				pdx_tooltip_anchor_orientation = lower_left
-				orientation = lower_right
-			}
+				iconType = {
+					name = "toggle_mapmode_icon_ideologies"
+					spriteType = "GFX_map_mode_ideologies"
+					position = { x = 18 y = 32 }
+					orientation = "LOWER_LEFT"
+					alwaystransparent = yes
+				}
 
-			iconType = {
-				name = "toggle_mapmode_icon_hyperlanes"
-				spriteType = "GFX_map_mode_hyperlanes"
-				position = { x = -193 y = -70 }
-				orientation = "LOWER_RIGHT"
-				alwaystransparent = yes
-			}
+				buttonType = {
+					name = "toggle_mapmode_sectors"
+					quadTextureSprite = "GFX_button_29_animated_dark"
+					position = { x = 40 y = 20 }
+					pdx_tooltip_anchor_offset = { x = 0 y = @tt_offset_y }
+					pdx_tooltip_anchor_orientation = lower_left
+					orientation = lower_left
+				}
 
-			buttonType = {
-				name = "toggle_mapmode_details"
-				quadTextureSprite = "GFX_button_29_animated_survey_dark"
-				position = { x = -238 y = -116 }
-				pdx_tooltip_anchor_offset = { x = 0 y = @tt_offset_y }
-				pdx_tooltip_anchor_orientation = lower_left
-				orientation = lower_right
-			}
+				iconType = {
+					name = "toggle_mapmode_icon_sectors"
+					spriteType = "GFX_map_mode_sectors"
+					position = { x = 52 y = 32 }
+					orientation = "LOWER_LEFT"
+					alwaystransparent = yes
+				}
 
-			iconType = {
-				name = "toggle_mapmode_icon_details"
-				spriteType = "GFX_mapmode_details"
-				frame = 1
-				position = { x = -226 y = -104 }
-				orientation = "LOWER_RIGHT"
-				alwaystransparent = yes
-			}
+				buttonType = {
+					name = "toggle_mapmode_hyperlanes"
+					quadTextureSprite = "GFX_button_29_animated_dark"
+					position = { x = 74 y = 20 }
+					pdx_tooltip_anchor_offset = { x = 0 y = @tt_offset_y }
+					pdx_tooltip_anchor_orientation = lower_left
+					orientation = lower_left
+				}
 
-			buttonType = {
-				name = "toggle_mapmode_players"
-				quadTextureSprite = "GFX_button_29_animated_dark"
-				position = { x = -205 y = -116 }
-				pdx_tooltip_anchor_offset = { x = 0 y = @tt_offset_y }
-				pdx_tooltip_anchor_orientation = lower_left
-				orientation = lower_right
-			}
+				iconType = {
+					name = "toggle_mapmode_icon_hyperlanes"
+					spriteType = "GFX_map_mode_hyperlanes"
+					position = { x = 86 y = 32 }
+					orientation = "LOWER_LEFT"
+					alwaystransparent = yes
+				}
 
-			iconType = {
-				name = "toggle_mapmode_icon_players"
-				spriteType = "GFX_map_mode_players"
-				position = { x = -193 y = -104 }
-				orientation = "LOWER_RIGHT"
-				alwaystransparent = yes
-			}
+				buttonType = {
+					name = "toggle_mapmode_details"
+					quadTextureSprite = "GFX_button_29_animated_survey_dark"
+					position = { x = 40 y = -14 }
+					pdx_tooltip_anchor_offset = { x = 0 y = @tt_offset_y }
+					pdx_tooltip_anchor_orientation = lower_left
+					orientation = lower_left
+				}
 
-			iconType = {
-				name = "mapmode_divider"
-				spriteType = "GFX_vertical_divider"
-				position = { x = -158 y = -102 }
-				scale = 2.0
-				orientation = "LOWER_RIGHT"
-				alwaysTransparent = yes
+				iconType = {
+					name = "toggle_mapmode_icon_details"
+					spriteType = "GFX_mapmode_details"
+					frame = 1
+					position = { x = 52 y = -2 }
+					orientation = "LOWER_LEFT"
+					alwaystransparent = yes
+				}
+
+				buttonType = {
+					name = "toggle_mapmode_players"
+					quadTextureSprite = "GFX_button_29_animated_dark"
+					position = { x = 74 y = -14 }
+					pdx_tooltip_anchor_offset = { x = 0 y = @tt_offset_y }
+					pdx_tooltip_anchor_orientation = lower_left
+					orientation = lower_left
+				}
+
+				iconType = {
+					name = "toggle_mapmode_icon_players"
+					spriteType = "GFX_map_mode_players"
+					position = { x = 86 y = -2 }
+					orientation = "LOWER_LEFT"
+					alwaystransparent = yes
+				}
+
+				iconType = {
+					name = "mapmode_divider"
+					spriteType = "GFX_vertical_divider"
+					scale = 2.0
+					orientation = "LOWER_RIGHT"
+					alwaysTransparent = yes
+				}
 			}
 
 			## Error Log
@@ -889,7 +924,7 @@ guiTypes = {
 			buttonType = {
 				name = "error_log_button"
 				quadTextureSprite = "GFX_error_log_button"
-				position = { x = -345 y = -68 }
+				position = { x = -464 y = -32 }
 				text = "ERROR"
 				buttonFont = "cg_16b"
 				Orientation = "LOWER_RIGHT"
@@ -900,7 +935,7 @@ guiTypes = {
 
 	containerWindowType = {
 		name = "control_group_window"
-		size = { width=62 height=47 }
+		size = { width = 62 height = 47 }
 
 		buttonType = {
 			name ="background"
